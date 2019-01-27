@@ -1,0 +1,16 @@
+body{
+	background-size: cover;
+	font-family: lato;
+}
+#content {
+	text-align: center;
+	padding-top: 15%;
+	background-color:solid white;
+}
+h1{
+	font-weight: 700;
+	font-size: 5em;
+}
+hr{
+	width: 1000px;
+}
