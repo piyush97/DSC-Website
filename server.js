@@ -4,6 +4,9 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
+const items = require('./routes/api/items');
+
+
 //Bodyparser middleware
 app.use(bodyParser.json());
 
@@ -13,6 +16,9 @@ mongoose
     .connect(db)
     .then(() => console.log('Database connected!'))
     .catch(err => console.log(err));
+
+//Use routes
+app.use('/api/items', items);
 
 const port = process.env.PORT || 5000;
 
