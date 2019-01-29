@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const app = express();
 
 const events = require('./routes/api/events');
+const blogs = require('./routes/api/blogs');
 
 
 //Bodyparser middleware
@@ -19,6 +20,7 @@ mongoose
 
 //Use routes
 app.use('/api/events', events);
+app.use('/api/blogs', blogs);
 
 const port = process.env.PORT || 5000;
 

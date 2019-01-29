@@ -1,40 +1,40 @@
 const express = require('express');
 const router = express.Router();
 
-//Event model
-const Event = require('../../models/Event');
+//Blog model
+const Blog = require('../../models/Blog');
 
-// @route   GET api/events
-// @desc    Get all events
+// @route   GET api/blogs
+// @desc    Get all blogs
 // @access  Public
 router.get('/', (req, res) => {
-    Event.find()
+    Blog.find()
         .sort({ date: -1 })
-        .then(events => res.json(events))
+        .then(blogs => res.json(blogs))
         .catch(err => res.status(404).json(err))
 });
 
-// @route   POST api/events
+// @route   POST api/blogs
 // @desc    Add new post
 // @access  Public
 // TODO: Make it private
 router.post('/', (req, res) => {
-    const newEvent = new Event({
+    const newBlog = new Blog({
         name: req.body.name
-    });
-    newEvent.save()
-        .then(event => res.json(event))
+    })
+    newBlog.save()
+        .then(blog => res.json(blog))
         .catch(err => res.json(err));
 
 });
 
-// @route   DELETE api/events
+// @route   DELETE api/blogs
 // @desc    Delete a post
 // @access  Public
 // TODO: Make it private
 router.delete('/:id', (req, res) => {
-    Event.findById(req.params.id)
-        .then(event => event.remove().then(() => res.json({ Success: true })))
+    Blog.findById(req.params.id)
+        .then(blog => blog.remove().then(() => res.json({ Success: true })))
         .catch(err => res.status(404).json({ Success: false }))
 
 });
