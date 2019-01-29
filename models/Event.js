@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 //Creating schema
-const ItemSchema = new Schema({
+const EventSchema = new Schema({
     eventID: {
         required: true,
         unique: true,
@@ -42,4 +42,5 @@ const ItemSchema = new Schema({
 
 // TODO: Add support for variable no. of images and contact and host details.
 
-module.exports = Item = mongoose.model('item', ItemSchema);
+// This determines the collection where the data is stored
+module.exports = Event = mongoose.model('event', EventSchema);

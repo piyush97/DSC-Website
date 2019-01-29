@@ -1,38 +1,38 @@
 const express = require('express');
 const router = express.Router();
 
-//Item model
-const Item = require('../../models/Item');
+//Event model
+const Event = require('../../models/Event');
 
-// @route   GET api/items
-// @desc    Get all items
+// @route   GET api/events
+// @desc    Get all events
 // @access  Public
 router.get('/', (req, res) => {
-    Item.find()
+    Event.find()
         .sort({ date: -1 })
-        .then(items => res.json(items))
+        .then(events => res.json(events))
 });
 
-// @route   POST api/items
+// @route   POST api/events
 // @desc    Add new post
 // @access  Public
 // TODO: Make it private
 router.post('/', (req, res) => {
-    const newItem = new Item({
+    const newEvent = new Event({
         name: req.body.name,
         eventID: req.body.eventID
     })
-    newItem.save().then(item => res.json(item));
+    newEvent.save().then(event => res.json(event));
 
 });
 
-// @route   DELETE api/items
+// @route   DELETE api/events
 // @desc    Delete a post
 // @access  Public
 // TODO: Make it private
 router.delete('/:id', (req, res) => {
-    Item.findById(req.params.id)
-        .then(item => item.remove().then(() => res.json({ Success: true })))
+    Event.findById(req.params.id)
+        .then(event => event.remove().then(() => res.json({ Success: true })))
         .catch(err => res.status(404).json({ Success: false }))
 
 });
