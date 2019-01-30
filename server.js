@@ -1,5 +1,8 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
+
+
 
 const app = express();
 
@@ -9,14 +12,14 @@ const homepage = require('./routes/index');
 const dashboard = require('./routes/api/dashboard');
 const admin = require('./routes/api/admin');
 
-//BodyParser
-app.use(express.urlencoded({ extended: false }));
+//Bodyparser middleware
+app.use(bodyParser.json());
 
 //DB config
 const db = require('./config/keys').mongoURI;
 
 mongoose
-    .connect(db, { useNewUrlParser: true })
+    .connect(db)
     .then(() => console.log('Database connected!'))
     .catch(err => console.log(err));
 
