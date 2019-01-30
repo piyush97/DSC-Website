@@ -14,6 +14,9 @@ h1{
 hr{
 	width: 1000px;
 }
+.navbar{
+	margin:0;
+}
 .card {
 margin-left: 950px;
 }
