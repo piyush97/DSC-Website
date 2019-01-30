@@ -6,6 +6,9 @@ const app = express();
 
 const events = require('./routes/api/events');
 const blogs = require('./routes/api/blogs');
+const homepage = require('./routes/index');
+const dashboard = require('./routes/api/dashboard');
+const admin = require('./routes/api/admin');
 
 
 //Bodyparser middleware
@@ -19,8 +22,10 @@ mongoose
     .catch(err => console.log(err));
 
 //Use routes
-app.use('/api/events', events);
-app.use('/api/blogs', blogs);
+app.use('/', homepage);
+app.use('/events', events);
+app.use('/blogs', blogs);
+app.use('/admin', admin);
 
 const port = process.env.PORT || 5000;
 
