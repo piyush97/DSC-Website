@@ -4,7 +4,6 @@ const bodyParser = require('body-parser');
 const passport = require('passport');
 const session = require('express-session');
 
-
 const app = express();
 
 const events = require('./routes/api/events');

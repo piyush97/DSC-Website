@@ -10,6 +10,11 @@ const EventSchema = new Schema({
         //unique: true,
         required: true
     },
+    kind: {
+        type: String,
+        //unique: true,
+        required: true
+    },
     date: {
         type: Date,
         default: "2018-01-01",

@@ -4,11 +4,21 @@ const router = express.Router();
 //Event model
 const Event = require('../../models/Event');
 
-// @route   GET api/events
+// @route   GET /events
 // @desc    Get all events
 // @access  Public
 router.get('/', (req, res) => {
     Event.find()
+        .sort({ date: -1 })
+        .then(events => res.json(events))
+        .catch(err => res.status(404).json(err))
+});
+
+// @route   GET /events/hackathons
+// @desc    Get all hackathons
+// @access  Public
+router.get('/hackathons', (req, res) => {
+    Event.find({ type: 'Hackathon' })
         .sort({ date: -1 })
         .then(events => res.json(events))
         .catch(err => res.status(404).json(err))
@@ -19,8 +29,15 @@ router.get('/', (req, res) => {
 // @access  Public
 // TODO: Make it private
 router.post('/', (req, res) => {
+    console.log(req.body);
     const newEvent = new Event({
-        name: req.body.name
+        name: req.body.name,
+        kind: req.body.kind,
+        date: req.body.date,
+        venue: req.body.venue,
+        host: req.body.host,
+        contact: req.body.contact,
+        details: req.body.details
     });
     newEvent.save()
         .then(event => res.json(event))
