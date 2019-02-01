@@ -36,7 +36,6 @@ router.delete('/:id', (req, res) => {
     Event.findById(req.params.id)
         .then(event => event.remove().then(() => res.json({ Success: true })))
         .catch(err => res.status(404).json({ Success: false }))
-
 });
 
 module.exports = router;

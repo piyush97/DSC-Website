@@ -1,20 +1,52 @@
 const express = require('express');
 const path = require('path');
 const bcrypt = require('bcryptjs');
+const passport = require('passport');
 
 const router = express.Router();
 
 const User = require('../../models/User');
 
+// @route   GET admin/
+// @desc    Displays the login page
+// @access  Public
 router.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname + '/../../public/login.html'));
-})
+    res.sendFile(path.join(__dirname + '/../../public/signin.html'));
+});
 
+// @route   GET admin/register
+// @desc    Displays the signup page
+// @access  Public
 router.get('/register', (req, res) => {
-    // TODO: Add registration page
-    res.send('New admin registration');
-})
+    // TODO: Make private access
+    res.sendFile(path.join(__dirname + '/../../public/signup.html'));
+});
 
+
+// @route   POST admin/
+// @desc    Login
+// @access  Public
+router.post('/', (req, res, next) => {
+    passport.authenticate('local', {
+        successRedirect: '/dashboard',
+        failureRedirect: '/admin',
+        //failureFlash: true
+    })(req, res, next);
+});
+
+// @route   GET admin/logout
+// @desc    Logs out the user
+// @access  Public
+router.get('/logout', (req, res) => {
+    // TODO: Make private access
+    req.logout();
+    //req.flash('success_msg', 'You are logged out');
+    res.redirect('/admin');
+});
+
+// @route   POST admin/register
+// @desc    Creates a new user
+// @access  Public
 router.post('/register', (req, res) => {
     const { name, email, password, password2 } = req.body;
 
