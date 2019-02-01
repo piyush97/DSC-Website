@@ -228,3 +228,21 @@ i.red{
 .nav-link:hover {
 	background-color: #555;
 }
+.the-legend {
+    border-style: none;
+    border-width: 0;
+    font-size: 24px;
+    line-height: 40px;
+    margin-bottom: 0;
+    width: auto;
+    padding: 0 10px;
+    border: 1px solid #405D9D;
+}
+.the-fieldset {
+    border: 1px solid #405D9D;
+    padding: 10px;
+}
+.modify{
+    color: #88C425
+}
+ /* Chrome 10-25, Safari 5.1-6 */
