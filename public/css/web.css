@@ -207,7 +207,7 @@ i.red{
   }
   
   .button:hover {
-    background-color: #555;
+    background-color:#555;
   }
 
   .jumbotron{
@@ -232,7 +232,7 @@ i.red{
         font-size: 24px;
     }
 .nav-link:hover {
-	background-color: #555;
+	background-color:lightgray;
 }
 .the-legend {
     border-style: none;
@@ -251,12 +251,14 @@ i.red{
 .modify{
     color: #88C425
 }
- 
+
 /*form css*/
+
 html,
 body {
   height: 100%;
 }
+
 
 .form-signin {
   width: 100%;
@@ -264,9 +266,11 @@ body {
   padding: 15px;
   margin: auto;
 }
+
 .form-signin .checkbox {
   font-weight: 400;
 }
+
 .form-signin .form-control {
   position: relative;
   box-sizing: border-box;
@@ -274,23 +278,28 @@ body {
   padding: 10px;
   font-size: 16px;
 }
+
 .form-signin .form-control:focus {
   z-index: 2;
 }
+
 .form-signin input[type="email"] {
   margin-bottom: -1px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
+
 .form-signin input[type="password"] {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
 .dsc-image
 {
   height: 200px;
   width: 200px;
 }
+
  /* Chrome 10-25, Safari 5.1-6 */
 
