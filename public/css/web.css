@@ -209,6 +209,12 @@ i.red{
   .button:hover {
     background-color: #555;
   }
+
+  .jumbotron{
+      height: 20px;
+      display: flex;
+      align-items: center;    
+  }
   .map-container-6{
     overflow:hidden;
     padding-bottom:56.25%;
