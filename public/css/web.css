@@ -61,6 +61,7 @@
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,300);
 body{
     font-family: 'Quicksand', sans-serif;
+    padding-top: 60px;
 }
 .team{
     padding:75px 0;
@@ -299,6 +300,30 @@ body {
 {
   height: 200px;
   width: 200px;
+}
+/*Carousel*/
+.carousel-item {
+  height: 280px;
+
+}
+.hvr-fade {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+  background-color: #fcc719;
+  color: white;
+}
+.current{
+  background-color:#fcc719; 
 }
 
  /* Chrome 10-25, Safari 5.1-6 */
