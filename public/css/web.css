@@ -325,6 +325,18 @@ body {
 .current{
   background-color:#fcc719; 
 }
+.parallax {
+  /* The image used */
+  background-image: url('background.jpg');
 
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
  /* Chrome 10-25, Safari 5.1-6 */
 
