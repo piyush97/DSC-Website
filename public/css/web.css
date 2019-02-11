@@ -5,11 +5,12 @@
         width: 100%;
     }
     /* Container holding the image and the text */
-.container1 {
+.container {
     position: relative;
-    text-align: center;
-    color: white;
+    /*text-align: center;*/
+    
   }
+  
   
   
   /* Centered text */
@@ -60,7 +61,7 @@
 }
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,300);
 body{
-    font-family: 'Quicksand', sans-serif;
+    
     padding-top: 60px;
     max-width: 100%;
     overflow-x: hidden;
@@ -217,7 +218,9 @@ i.red{
   .jumbotron{
       height: 20px;
       display: flex;
-      align-items: center;    
+      align-items: center;
+      padding-top: 150px; 
+      padding-bottom:150px; 
   }
   .map-container-6{
     overflow:hidden;
@@ -330,10 +333,10 @@ body {
 }
 .parallax {
   /* The image used */
-  background-image: url('download4.jpeg');
+  background-image: url('download5.jpg');
 
   /* Full height */
-  height: 50%; 
+  height: 55%; 
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -341,5 +344,14 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
- /* Chrome 10-25, Safari 5.1-6 */
+.navbar
+{
+background-color:#0a0f16 !important;
+
+}
+h1{
+  font-size: 80px;
+}
+
+/* Chrome 10-25, Safari 5.1-6 */
 
