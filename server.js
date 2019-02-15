@@ -33,10 +33,10 @@ app.use(bodyParser.json());
 //DB config
 const db = require('./config/keys').mongoURI;
 
-mongoose
-    .connect(db)
-    .then(() => console.log('Database connected!'))
-    .catch(err => console.log(err));
+// mongoose
+//     .connect(db)
+//     .then(() => console.log('Database connected!'))
+//     .catch(err => console.log(err));
 
 //Use routes
 app.use('/events', events);
