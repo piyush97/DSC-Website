@@ -6,12 +6,12 @@ The official DSC Website repository
 Use basic git commands [git](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf) to install and run DSC-Website.
 
 ```bash
-git clone https://github.com/RohitNagraj/DSC-Website.git
+git clone https://github.com/piyush97/DSC-Website.git
 ```
 
 ## Usage
 
-Open the ```index.html``` file in the public folder to view the website in your preferred browser. Alternatively, it could be viewed live [here](https://um283efxwbpdq61qxbvzua-on.drv.tw/Website/).
+Open the ```index.html``` file in the public folder to view the website in your preferred browser. Live Hosting is on its way.
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
