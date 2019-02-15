@@ -1,5 +1,5 @@
 # DSC-Website
-
+[![Build Status](https://travis-ci.com/piyush97/DSC-Website.svg?branch=master)](https://travis-ci.com/piyush97/DSC-Website)
 The official DSC Website repository
 ## Installation
 
