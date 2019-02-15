@@ -148,8 +148,8 @@ h6.description {
   border-color: #fff;
   color: #88c425;
 }
-a {
-  color: #88c425;
+a:link {
+  color: #f4eb42;
 }
 a:hover {
   text-decoration: none;
@@ -235,8 +235,9 @@ i.red {
 .links {
   font-size: 24px;
 }
-.nav-link:hover {
-  background-color: lightgrey;
+.nav-link
+{
+  color:yellow;
 }
 .the-legend {
   border-style: none;
@@ -321,11 +322,11 @@ body {
 .hvr-fade:hover,
 .hvr-fade:focus,
 .hvr-fade:active {
-  background-color: #fcc719;
+  background-color: #f7c225;
   color: white;
 }
 .current {
-  background-color: #fcc719;
+  background-color: #f7c225;
 }
 .parallax {
   /* The image used */
@@ -362,3 +363,4 @@ h1 {
 .display-4:hover {
   text-decoration: underline;
 }
+
