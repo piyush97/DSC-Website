@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RohitNagraj/DSC-Website.git"
+    "url": "git+https://github.com/piyush97/DSC-Website.git"
   },
   "author": "DSC-RIT",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/RohitNagraj/DSC-Website/issues"
   },
-  "homepage": "https://github.com/RohitNagraj/DSC-Website#readme",
+  "homepage": "https://github.com/piyush97/DSC-Website#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
