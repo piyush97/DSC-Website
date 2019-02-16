@@ -58,233 +58,208 @@
     </section>
     <br><br>
     <section id="body-dashboard">
-      <div class="card text-center container">
-        <div class="card-header">
-          Featured
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Welcome Admin!</h5>
-          <p class="card-text">Here, you can add new events and workshops for Developer Student Club</p>
-        </div>
-        <div class="card-footer text-muted">
-          Developer Student Club
-        </div>
-      </div>
       <div id="accordion container">
-  <div class="card">
-    <div class="card-header" id="headingOne">
-      <h5 class="mb-0">
-        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Add Blog
-        </button>
-      </h5>
-    </div>
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                aria-controls="collapseOne">
+                Add Blog
+              </button>
+            </h5>
+          </div>
 
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-      <div class="card-body">
-        <section id="blog_post">
-        <br><br>
-                <div class="container">
-                        <div class="form-group">
-                                <fieldset class="the-fieldset">
-                                    <legend class="the-legend">Update Blog</legend>
-                                    <form>
-                                            <div class="form-group">
-                                              <label for="exampleFormControlInput1">Title of blog</label>
-                                              <input type="text" class="form-control" id="title" placeholder="Enter your title here..">
-                                            </div>
-                                            <div class="form-group">
-                                              <label for="exampleFormControlTextarea1">Enter the description</label>
-                                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="25" placeholder="Type your blog here"></textarea>
-                                            </div>
-                                            <form>
-                                                <fieldset class="the-fieldset">
-                                                        <div class="form-group">
-                                                                <label for="exampleFormControlFile1">Upload Image</label>
-                                                                <input type="file" class="form-control-file modify" id="exampleFormControlFile1" accept="image/*">
-                                                              </div>
-                                                </fieldset>
-                                                
-                                              </form><br>
-                                              <form>
-                                                    <fieldset class="the-fieldset">
-                                                            <div class="form-group">
-                                                                    <label for="exampleFormControlFile1">Upload Additional Document or File</label>
-                                                                    <input type="file" class="form-control-file modify" id="exampleFormControlFile1">
-                                                                  </div>
-                                                    </fieldset>
-                                                    
-                                                  </form>
-
-                                          </form><br>
-                                          <button class="btn btn-primary" style="float: right" type="subit" id="submit">Publish</button>
-                                </fieldset>
-                            </div>
-                </div>
-    </section>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Add Event
-        </button>
-      </h5>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-      <div class="card-body">
-        <section id="blog_post">
-        <br><br>
-        <div class="container">
-          <div class="form-group">
-            <fieldset class="the-fieldset">
-              <legend class="the-legend">Update Event</legend>
-              <form method="POST" action="/events">
-                <div class="form-group">
-                  <label for="exampleFormControlInput1">Name of the Event</label>
-                  <input type="text" class="form-control" id="title" placeholder="Enter your title here.." name="name">
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlInput1">Date(YYYY-MM-DD)</label>
-                  <input type="text" class="form-control" id="title" placeholder="Enter your date(DD-MM-YYYY)here.."
-                    name="date">
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlInput1">Day</label>
-                  <input type="text" class="form-control" id="title" placeholder="Enter the day here.." name="day">
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlInput1">Venue</label>
-                  <input type="text" class="form-control" id="title" placeholder="Enter your Venue here.." name="venue">
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlInput1">Hosted By</label>
-                  <input type="text" class="form-control" id="title" placeholder="Enter your title here.." name="host">
-                </div>
-
-                <div class="form-group">
-                  <label for="exampleFormControlTextarea1">Enter the description of Event</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"
-                    placeholder="Type your blog here" name="description"></textarea>
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlFile1">Hosts's Section</label><br>
-                  <label for="exampleFormControlInput1">Name</label>
-                  <input type="text" class="form-control" id="title" placeholder="Enter your name here.."
-                    name="contact_name">
-                  <label for="exampleFormControlInput1">Phone number</label>
-                  <input type="text" class="form-control" id="title" placeholder="Enter your Phone number here.."
-                    name="contact_phone">
-                  <label for="exampleFormControlInput1">Email</label>
-                  <input type="text" class="form-control" id="title" placeholder="Enter your Email here.."
-                    name="contact_email">
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlFile1">Upload Image</label>
-                  <input type="file" class="form-control-file modify" id="exampleFormControlFile1" accept="image/*">
-                </div>
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              <section id="blog_post">
                 <br><br>
-                <button class="btn btn-primary" style="float: right" type="subit" id="submit">Publish</button>
-              </form>
-            </fieldset>
+                <div class="container">
+                  <div class="form-group">
+                    <fieldset class="the-fieldset">
+                      <legend class="the-legend">Update Blog</legend>
+                      <form>
+                        <div class="form-group">
+                          <label for="exampleFormControlInput1">Title of blog</label>
+                          <input type="text" class="form-control" id="title" placeholder="Enter your title here..">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlTextarea1">Enter the description</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="25"
+                            placeholder="Type your blog here"></textarea>
+                        </div>
+                        <form>
+                          <fieldset class="the-fieldset">
+                            <div class="form-group">
+                              <label for="exampleFormControlFile1">Upload Image</label>
+                              <input type="file" class="form-control-file modify" id="exampleFormControlFile1"
+                                accept="image/*">
+                            </div>
+                          </fieldset>
+
+                        </form><br>
+                        <form>
+                          <fieldset class="the-fieldset">
+                            <div class="form-group">
+                              <label for="exampleFormControlFile1">Upload Additional Document or File</label>
+                              <input type="file" class="form-control-file modify" id="exampleFormControlFile1">
+                            </div>
+                          </fieldset>
+
+                        </form>
+
+                      </form><br>
+                      <button class="btn btn-primary" style="float: right" type="subit" id="submit">Publish</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </section>
+            </div>
           </div>
         </div>
-      </section>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingThree">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Add Member
-        </button>
-      </h5>
-    </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-      <div class="card-body">
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                aria-expanded="false" aria-controls="collapseTwo">
+                Add Event
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+              <section id="blog_post">
                 <br><br>
-    <div>
-    <form class="container col-6">
+                <div class="container">
+                  <div class="form-group">
+                    <fieldset class="the-fieldset">
+                      <legend class="the-legend">Update Event</legend>
+                      <form method="POST" action="/events">
+                        <div class="form-group">
+                          <label for="exampleFormControlInput1">Name of the Event</label>
+                          <input type="text" class="form-control" id="title" placeholder="Enter your title here.."
+                            name="name">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlInput1">Date(YYYY-MM-DD)</label>
+                          <input type="text" class="form-control" id="title"
+                            placeholder="Enter your date(DD-MM-YYYY)here.." name="date">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlInput1">Day</label>
+                          <input type="text" class="form-control" id="title" placeholder="Enter the day here.."
+                            name="day">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlInput1">Venue</label>
+                          <input type="text" class="form-control" id="title" placeholder="Enter your Venue here.."
+                            name="venue">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlInput1">Hosted By</label>
+                          <input type="text" class="form-control" id="title" placeholder="Enter your title here.."
+                            name="host">
+                        </div>
 
-            <div class="form-group input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
-                 </div>
-                <input name="" class="form-control" placeholder="Full name" type="text">
-            </div> <!-- form-group// -->
-            <div class="form-group input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
-                 </div>
-                <input name="" class="form-control" placeholder="Email address" type="email">
-            </div> <!-- form-group// -->
-            <div class="form-group input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+                        <div class="form-group">
+                          <label for="exampleFormControlTextarea1">Enter the description of Event</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"
+                            placeholder="Type your blog here" name="description"></textarea>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlFile1">Hosts's Section</label><br>
+                          <label for="exampleFormControlInput1">Name</label>
+                          <input type="text" class="form-control" id="title" placeholder="Enter your name here.."
+                            name="contact_name">
+                          <label for="exampleFormControlInput1">Phone number</label>
+                          <input type="text" class="form-control" id="title"
+                            placeholder="Enter your Phone number here.." name="contact_phone">
+                          <label for="exampleFormControlInput1">Email</label>
+                          <input type="text" class="form-control" id="title" placeholder="Enter your Email here.."
+                            name="contact_email">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlFile1">Upload Image</label>
+                          <input type="file" class="form-control-file modify" id="exampleFormControlFile1"
+                            accept="image/*">
+                        </div>
+                        <br><br>
+                        <button class="btn btn-primary" style="float: right" type="subit" id="submit">Publish</button>
+                      </form>
+                    </fieldset>
+                  </div>
                 </div>
-                
-                <input name="" class="form-control" placeholder="Phone number" type="text">
-            </div> <!-- form-group// -->
-            <div class="form-group input-group">
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                aria-expanded="false" aria-controls="collapseThree">
+                Add Member
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+              <br><br>
+              <div>
+                <form class="container col-6">
+
+                  <div class="form-group input-group">
                     <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
-                     </div>
+                      <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                    </div>
+                    <input name="" class="form-control" placeholder="Full name" type="text">
+                  </div> <!-- form-group// -->
+                  <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                    </div>
+                    <input name="" class="form-control" placeholder="Email address" type="email">
+                  </div> <!-- form-group// -->
+                  <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+                    </div>
+
+                    <input name="" class="form-control" placeholder="Phone number" type="text">
+                  </div> <!-- form-group// -->
+                  <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                    </div>
                     <input name="" class="form-control" placeholder="USN" type="text">
-             </div> <!-- form-group// -->
-                
-            </div> <!-- form-group end.// -->
-            <div class="form-group input-group">
+                  </div> <!-- form-group// -->
+
+              </div> <!-- form-group end.// -->
+              <div class="form-group input-group">
                 <div class="input-group-prepend">
-                    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                  <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
                 </div>
                 <input class="form-control" placeholder="Create password" type="password">
-            </div> <!-- form-group// -->
-            <div class="form-group input-group">
+              </div> <!-- form-group// -->
+              <div class="form-group input-group">
                 <div class="input-group-prepend">
-                    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                  <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
                 </div>
                 <input class="form-control" placeholder="Repeat password" type="password">
-            </div> <!-- form-group// -->                                      
-            <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-block"> Create Account  </button>
-            </div> <!-- form-group// -->      
-            <p class="text-center">Have an account? <a href="login.html">Log In</a> </p>                                                                 
-        </form>
-       </div>
-            
-      </div>
-    </div>
-  </div>
-</div>
+              </div> <!-- form-group// -->
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block"> Create Account </button>
+              </div> <!-- form-group// -->
+              <p class="text-center">Have an account? <a href="login.html">Log In</a> </p>
+              </form>
+            </div>
 
-      <br><br>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Github Link Of Project</h5>
-                <p class="card-text">Here is the source code of the project. You can modify it whenever you want! It's
-                  super easy to do so!</p>
-                <a href="https://github.com/RohitNagraj/DSC-Website" class="btn btn-primary">Github</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Database of the website</h5>
-                <p class="card-text">You can access the database from here. Its based on MongoDB. You can view the
-                  contents there.</p>
-                <a href="https://github.com/RohitNagraj/DSC-Website" class="btn btn-primary">Database</a>
-              </div>
-            </div>
           </div>
         </div>
       </div>
+      </div>
+
+      <br><br>
+
     </section>
     <section>
       <footer class="page-footer font-small cyan darken-3">
