@@ -10,15 +10,15 @@ const EventSchema = new Schema({
         //unique: true,
         required: true
     },
-    kind: {
-        type: String,
-        //unique: true,
-        required: true
-    },
     date: {
         type: Date,
-        default: "2018-01-01",
+        default: Date.now(),
         required: true
+    },
+    day: {
+        type: String,
+        required: true,
+        default: "Saturday"
     },
     venue: {
         type: String,
@@ -28,18 +28,23 @@ const EventSchema = new Schema({
         type: [String],
         default: "DSC-RIT"
     },
-    contact: {
-        type: [String]
+    description: {
+        type: String,
+        default: ""
     },
-    details: {
-        description: {
-            type: String,
-            default: '-'
+    contact: {
+        name: {
+            type: String
         },
-        image: {
-            type: String,
-            default: "-"
+        phone: {
+            type: Number
+        },
+        email: {
+            type: String
         }
+    },
+    image: {
+        type: String
     }
 });
 
