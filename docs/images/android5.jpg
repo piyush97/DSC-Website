@@ -1,0 +1,1000 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+            <meta name="theme-color" content="#4285F4">
+		    <meta name="msapplication-navbutton-color" content="#4285F4">
+		    <meta name="apple-mobile-web-app-status-bar-style" content="#4285F4">
+		   <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" /> 
+		   <meta name="description" content="SRM Developer Students Club (SRM DSC) is a Google Developers program for SRM University students to learn mobile and web development skills.">
+		   <title>SRM Developer Students Club (SRMDSC) - Initiated by Google Developers</title>
+		   <meta charset="utf-8"/>
+                   <link rel="icon" href="images/dsc3.png">
+      <!--links for materialize css and jquery in material folder  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+       
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<!--
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+-->
+    <script src="material/js/materialize.min.js"></script>
+
+  <link rel="stylesheet" href="material/css/materialize.min.css">
+
+
+
+<script type="text/javascript" src="js/materialPreloader.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/materialPreloader.min.css">
+
+
+
+              <style>
+
+   .edge--bottom {
+  position: relative;
+  z-index: 1;
+}
+.edge--bottom:after {
+  background: inherit;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+}
+.edge--bottom:after {
+  bottom: 0;
+  -webkit-transform: skewY(-1.5deg);
+          transform: skewY(-1.5deg);
+  -webkit-transform-origin: 100%;
+          transform-origin: 100%;
+}
+.edge--bottom--reverse {
+  position: relative;
+  z-index: 1;
+}
+.edge--bottom--reverse:after {
+  background: inherit;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+}
+.edge--bottom--reverse:after {
+  bottom: 0;
+  -webkit-transform: skewY(1.5deg);
+          transform: skewY(1.5deg);
+  -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+}
+.edge--top {
+  position: relative;
+  z-index: 1;
+}
+.edge--top:before {
+  background: inherit;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+}
+.edge--top:before {
+  top: 0;
+  -webkit-transform: skewY(1.5deg);
+          transform: skewY(1.5deg);
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+}
+.edge--top--reverse {
+  position: relative;
+  z-index: 1;
+}
+.edge--top--reverse:before {
+  background: inherit;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+}
+.edge--top--reverse:before {
+  top: 0;
+  -webkit-transform: skewY(-1.5deg);
+          transform: skewY(-1.5deg);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+.edge--both {
+  position: relative;
+  z-index: 1;
+}
+.edge--both:before, .edge--both:after {
+  background: inherit;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+}
+.edge--both:before {
+  top: 0;
+  -webkit-transform: skewY(1.5deg);
+          transform: skewY(1.5deg);
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+}
+.edge--both:after {
+  bottom: 0;
+  -webkit-transform: skewY(-1.5deg);
+          transform: skewY(-1.5deg);
+  -webkit-transform-origin: 100%;
+          transform-origin: 100%;
+}
+.edge--both--reverse {
+  position: relative;
+  z-index: 1;
+}
+.edge--both--reverse:before, .edge--both--reverse:after {
+  background: inherit;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+}
+.edge--both--reverse:before {
+  top: 0;
+  -webkit-transform: skewY(-1.5deg);
+          transform: skewY(-1.5deg);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+.edge--both--reverse:after {
+  bottom: 0;
+  -webkit-transform: skewY(1.5deg);
+          transform: skewY(1.5deg);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+.-berry {
+  background: #b52b4a;
+}
+.-blue {
+  background: #41ade5;
+}
+.-orange {
+  background: #de6628;
+}
+.-green {
+  background: #34A853;
+}
+.-grey {
+  background: #ededed;
+}
+.-yellow
+{background: #fbbc05;}
+.block {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 0 100px;
+  padding: 5% 20px;
+  text-align: center;
+}
+h1 {
+  font-size: 48px;
+  font-weight: 500;
+}
+p {
+  font-size: 28px;
+  font-weight: 300;
+  margin-top: 0.5em;
+}
+#hero
+{
+font-size: 20px;
+text-align: center;
+height: 92vh;
+}
+#heroChild
+{display: flex;
+justify-content: center; /* align horizontal */
+align-items: center;
+margin-top:50vh;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+
+ #second
+ {height:800px !important;}
+
+}
+ body
+  {
+  	font-family: 'Montserrat' !important;
+  	width:100% !important;
+    overflow-x: hidden !important;
+  }
+  .navbar-fixed {
+  z-index: 1000;
+}
+#second
+{
+color:#2b2b2b !important;
+
+}
+
+
+#contact .material-icons
+{
+  color:#FF9800;
+}
+.md-preloader {
+  font-size: 0;
+  display: inline-block;
+  -webkit-animation: outer 6600ms linear infinite;
+          animation: outer 6600ms linear infinite;
+}
+.md-preloader svg {
+  -webkit-animation: inner 1320ms linear infinite;
+          animation: inner 1320ms linear infinite;
+}
+.md-preloader svg circle {
+  fill: none;
+  stroke: #34A853;
+  stroke-linecap: square;
+  -webkit-animation: arc 1320ms cubic-bezier(0.8, 0, 0.4, 0.8) infinite;
+          animation: arc 1320ms cubic-bezier(0.8, 0, 0.4, 0.8) infinite;
+}
+@-webkit-keyframes outer {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes outer {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes inner {
+  0% {
+    -webkit-transform: rotate(-100.8deg);
+            transform: rotate(-100.8deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+@keyframes inner {
+  0% {
+    -webkit-transform: rotate(-100.8deg);
+            transform: rotate(-100.8deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+@-webkit-keyframes arc {
+  0% {
+    stroke-dasharray: 1 210.48670779px;
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dasharray: 151.55042961px, 210.48670779px;
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dasharray: 1 210.48670779px;
+    stroke-dashoffset: -151.55042961px;
+  }
+}
+@keyframes arc {
+  0% {
+    stroke-dasharray: 1 210.48670779px;
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dasharray: 151.55042961px, 210.48670779px;
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dasharray: 1 210.48670779px;
+    stroke-dashoffset: -151.55042961px;
+  }
+}
+.main
+{
+      overflow-x: hidden !important;
+padding:0px  !important;
+margin: 0px  !important;
+}
+body
+{
+  font-family: 'Montserrat', sans-serif !important;
+
+}
+
+.showbox {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5%;
+}
+
+.loader1 {
+  display: inline-block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+  width: 100px;
+}
+.loader1:before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+.circular {
+  -webkit-animation: rotate 2s linear infinite;
+          animation: rotate 2s linear infinite;
+  height: 100%;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.path {
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  -webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+          animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+  stroke-linecap: round;
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124px;
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124px;
+  }
+}
+@-webkit-keyframes color {
+  100%,
+  0% {
+    stroke: #d62d20;
+  }
+  40% {
+    stroke: #0057e7;
+  }
+  66% {
+    stroke: #008744;
+  }
+  80%,
+  90% {
+    stroke: #ffa700;
+  }
+}
+@keyframes color {
+  100%,
+  0% {
+    stroke: #d62d20;
+  }
+  40% {
+    stroke: #0057e7;
+  }
+  66% {
+    stroke: #008744;
+  }
+  80%,
+  90% {
+    stroke: #ffa700;
+  }
+}
+
+ </style>
+
+  </head>
+
+<body>
+
+ <div id="loader"  style="width: 100%;height: 100%;background-color:#d3d3d3;z-index: 9999;position: fixed;text-align: center;" ><div class="showbox">
+  <div class="loader1">
+    <svg class="circular" viewBox="25 25 50 50">
+      <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+    </svg>
+  </div>
+</div>
+</div>
+<div class="main">
+  <div class="navbar-fixed" >
+
+  <nav style="background: #4285F4" role="navigation">
+    <div class="nav-wrapper container">
+	<a class="hide-on-med-and-down" id="logo-container" href="http://srmuniv.ac.in" target="_blank" class="brand-logo">
+    	<img src="images/dsc3.png" width="55px" height="60px" style="padding-top:5px"></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="menu1"  href="#aboutus">About Us </a></li>
+        <li><a class="menu2" href="workshops.html">Workshops</a></li>
+        <li><a class="menu3" href="#events">Events</a></li>
+        <li><a  href="team.html">Team</a></li>
+        <li><a class="menu4" href="#contact">Contact</a></li>
+      </ul>
+
+      <ul id="nav-mobile" style="position: fixed" class="sidenav">
+	  <li>
+	    <div class="user-view black-text" style="background: #4285F4">
+     
+         <img src="images/dsc3.png" width="65px" height="70px">
+        </div>
+	 </li>
+	   
+      <li><a class="menu1" href="#aboutus">About Us </a></li>
+      <li><a class="menu2" href="workshops.html">Workshops</a></li>
+      <li><a class="menu3" href="#events">Events</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a class="menu4" href="#contact">Contact</a></li>
+     </ul>
+	<a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+   </div>
+</nav>
+
+</div>
+
+
+
+<div class="block -green edge" style="margin-top:0px;height: 0vh; display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 92vh;
+  margin: 0;
+  padding: 0;">
+  <div style="margin-top:-30px" >
+  <h1 style="font-size: 46px;font-weight: 100" >SRM DSC</h1>
+  <p>Developers Students Club | Initiated By Google Developers</p>
+
+<div style="padding-top:30px">
+  <a href="https://developers.google.com/training/programs/india/#developer-student-clubs" target="_blank" id="learnmore"><button  class="orange waves-effect waves-light btn">Learn More</button></a>
+</div>
+
+  <img src="images/hero.png" style="padding-top:65px;" class="responsive-img" width="700px">
+</div>
+</div>
+
+<div class=" -grey " id="second" class="section scrollspy" style="height: 400px; margin-bottom: 0; text-align: center; padding-top:40px;">
+
+ <div class="row" style="" id="aboutus" >
+      <div class="col s12 m6">  <i style="font-size:40px" class="material-icons">school</i>
+      	<br>
+      	<h5>About DSC</h5><br>
+      	<div class="container" style="text-align: justify;font-size:16px">
+      	Developer Student Club (DSC) is a Google Developers program for university students to learn mobile and web development skills. The club will be open to any student, ranging from novice developers who are just starting, to advanced developers who want to further their skills. The club is intended as a space for students to try out new ideas and collaborate to solve mobile and web development problems.
+      </div>
+</div>
+      <div class="col s12 m6">  <i style="font-size:40px"  class="material-icons">group</i>
+      	<br>
+      	<h5>What we do?</h5><br>
+      		<div class="container" style="text-align: justify;font-size:16px  ">
+   Google Developer Groups can take many forms - from just a few people getting together to watch some videos, to large gatherings with demos, tech talks, hackathons and conferences. We work on various technical domains and try to make use of Google Technologies to empower the audience around us.
+      </div>
+</div>
+    </div>
+
+</div>
+
+<div class=" -grey " id="second-2" style="height: 460px; text-align:center;">
+
+
+<div class="slider grey-text">
+    <ul class="slides">
+      <li>
+        <img src="https://scontent-sin2-2.xx.fbcdn.net/v/t1.0-9/39962609_1774041082712352_6985763989116420096_o.jpg?_nc_cat=107&_nc_ht=scontent-sin2-2.xx&oh=b3d11cf6741f6fad5457c4fa0243fecc&oe=5CF56626"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Android App Development</h3>
+          <h5 class="light grey-text text-lighten-3">Learn to build apps from scratch!</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://scontent-sin2-2.xx.fbcdn.net/v/t1.0-9/39983938_1774041406045653_4968793823032377344_o.jpg?_nc_cat=103&_nc_ht=scontent-sin2-2.xx&oh=580b937f12700a1fe85fdbce2bbe5c01&oe=5CFDCC42"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Workshops!</h3>
+          <h5 class="light grey-text text-lighten-3">Great opportunity to bring our community together to learn something new!</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://scontent-sin2-2.xx.fbcdn.net/v/t31.0-8/13002441_930918743691261_3828259243053467519_o.jpg?_nc_cat=106&_nc_ht=scontent-sin2-2.xx&oh=832a3b7b54ae48a365be75e5a4e23df3&oe=5CF63439"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>CodeLabs</h3>
+          <h5 class="light grey-text text-lighten-3">Practical Experience to enhance Learning!</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://scontent-sin2-2.xx.fbcdn.net/v/t1.0-9/40330197_1781498685299925_2097784219185971200_o.jpg?_nc_cat=102&_nc_ht=scontent-sin2-2.xx&oh=a502ebbe291c80c7aac76662f878a03d&oe=5CC682DE"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Hands on Workshops</h3>
+          <h5 class="light grey-text text-lighten-3">Because You can't be a boxer by watching the match. You have to get in the ring. </h5>
+        </div>
+      </li>
+       <li>
+        <img src="https://scontent-sin2-2.xx.fbcdn.net/v/t1.0-9/17799141_1252368571546275_9206639765204966381_n.jpg?_nc_cat=105&_nc_ht=scontent-sin2-2.xx&oh=55cef2357f0cf3e2411f91bfc51536ad&oe=5CB43A38"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Hangouts!</h3>
+          <h5 class="light grey-text text-lighten-3"> 30+ Events <br> 1800+ Participants</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+      
+
+</div>
+
+
+
+
+
+ <div class="block -yellow  hide-on-large-only" id="domains" style="margin-bottom: 0;">
+  <h4>Domains</h4>
+
+  <div class="row">
+      <div class="col s3">
+  
+      	<p>Business</p>
+
+</div>
+ <div class="offset-s4 col s3">
+     
+      	<p>Technical</p>
+
+</div>
+<div class="offset-s3 col s4">
+      
+      	<p>Photography</p>
+
+</div>
+    </div>
+<div class="col s4 ">
+      	
+      	      	<img src="images/dsc3.png" width="100px" ></br>
+
+</div>
+  <div class="row" style="">
+      <div class="col s3 ">
+      	
+      	      	<p>Creatives</p>
+
+    </div>
+ 
+
+     
+ <div class="offset-s2 col s7 ">
+      
+      	<p>Public Relations</p>
+
+</div>
+
+    </div>
+</div>
+</div>             
+<div class="block -yellow hide-on-med-and-down" id="domains" style="margin-bottom: 0;">
+  <h4>Domains</h4>
+
+  <div class="row" style="">
+      <div class="col s4 ">
+      	<br>
+      	<p>Business</p><br>
+
+</div>
+ <div class="col s4 ">
+      	<br>
+      	<p>Technical</p><br>
+
+</div>
+<div class="col s4 ">
+      	<br>
+      	<p>Photography & Docs</p><br>
+
+</div>
+    </div>
+
+  <div class="row" style="">
+      <div class="col s4 ">
+      	<br>
+      	      	<p>Creatives</p><br>
+
+</div>
+ <div class="row" style="">
+      <div class="col s4 ">
+      	<br>
+      	      	<img src="images/dsc3.png" width="100px" ><br>
+
+</div>
+ <div class="col s4 ">
+      	<br>
+      	<p>Public Relations</p><br>
+
+</div>
+
+    </div>
+</div>
+</div>
+
+
+
+
+
+<div class=" --both " id="events" style="margin-left: 5%">
+<iframe scrolling="no" frameBorder="0" src="timeline/index.html" style="overflow:hidden; @media (max-width: 850px) {margin-right: 20%;
+}; width:95%; height:880px;">
+</iframe>
+</div>
+
+
+
+
+<div class="block -orange edge " id="contact" style="margin-bottom: 0;">
+
+ <div class="row">
+ 	<form id="myform"> 
+
+	<div class="col s12 m4">
+		<div class="card">
+		<div class="card-content" id="contact">
+		<div class="card-title black-text">CONTACT US</div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix active">account_circle</i>
+          <input id="name" type="text" required class="validate">
+          <label for="name">Name</label>
+        </div>
+        <div class="input-field col s12">
+          <i class="material-icons prefix active">phone</i>
+          <input id="phone" type="number"  required class="validate">
+          <label for="phone">Phone</label>
+        </div>
+				<div class="input-field  col s12">
+				   <i class="material-icons prefix active">mail</i>
+				   <input id="email" type="email" required class="validate">
+			     <label for="email">Email</label>
+				</div>
+				<div class="input-field col s12">
+          <i class="material-icons prefix active">mode_edit</i>
+					<textarea id="message" required class="materialize-textarea"></textarea>
+          <label for="message">Message</label>
+        </div>
+
+       </div>
+     </div>
+	  <div class="card-action">
+ 	     <button id="submit"  type="submit" class="btn waves-effect orange waves-light" >Submit
+ 	       <i class="material-icons right" style="color:white">send</i>
+ 	      </button>
+ 	  </div>
+     </div>
+  </div>
+</form>
+   <div class="offset-m1 col m3 s12">
+     <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsrmdsc&tabs=timeline&width=300&height=525&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=221445641825006" width="100%" height="525" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" title="Facebook feed of SRM DSC"></iframe>
+	 </div>
+
+     <div class="offset-m1 col m3 hide-on-small-only">
+       <a class="twitter-timeline"  data-chrome="nofooter"  data-lang="en" data-width="100%" data-height="525" href="https://twitter.com/DSC_SRM?ref_src=twsrc%5Etfw">Tweets by DSC_SRM</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8" title="Twitter feed of SRM DSC"></script>
+	 </div>
+ </div>
+</div>
+
+
+<div class="parallax-container hide-on-small-only">
+      <div class="parallax">
+	  <img src="images/gdd.jpeg">
+
+	  </div>
+</div>
+
+ <!-- Add FIXED ACTION BUTTON -->
+
+        <div class="fixed-action-btn vertical">
+            <a class="btn-floating btn-large red">
+                <i class="material-icons">chat</i>
+            </a>
+            <ul>
+                <li><a class="btn-floating  blue darken-4" target="_blank" href="https://www.facebook.com/srmdsc"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="btn-floating cyan lighten-1" target="_blank" href="https://twitter.com/DSC_SRM"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="btn-floating red darken-3" target="_blank" href="https://www.youtube.com/channel/UChyXR37pLcnvwE4nHmOXxMQ"> <i class="fa fa-youtube"></i></a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/company/srm-developer-student-club" class="btn-floating blue lighten-1"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+
+
+
+<!--
+<div class="block -orange edge--both">
+  <h1>Top & Bottom Angled Edges</h1>
+</div>
+
+<div class="block -green edge--both--reverse">
+  <h1>Top & Bottom Angled Edges</h1>
+  <p>Reversed</p>
+</div>  -->
+
+
+<footer class="page-footer blue">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">SRM Developers Student Club</h5>
+                 <p style="font-size:16px;">
+			<br/>
+			  <span>SRM Institute of Science & Technology,<br />
+				    Kattankulathur, Chennai 603203<br />
+				    India</span>
+	         <div style="width: 100%"><iframe width="100%" height="240" src="https://maps.google.com/maps?width=120%&height=300&hl=en&q=Potheri%2C%20SRM%20Nagar%2C%20Kattankulathur%2C%20Tamil%20Nadu%20603203+(SRM%20Institute%20of%20Science%20and%20Technology)&ie=UTF8&t=&z=14&iwloc=B&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><br />
+			  </p>
+              </div>
+
+		    <div class="offset-l3 col l3  s12">
+                <h5 class="white-text">Follow Us</h5>
+                <ul style="color:white">
+                  <li><a class="grey-text text-lighten-3" href="http://www.facebook.com/srmdsc " target="_blank"><img src="images/facebook.png" alt="fb"/>Facebook</a></li>
+                  <li><a class="grey-text text-lighten-3" href="http://www.twitter.com/DSC_SRM" target="_blank"><img src="images/twitter.png" alt="tw"/>Twitter</a></li>
+                  <li><a class="grey-text text-lighten-3" href="http://www.linkedin.com/company/srm-developer-student-club" target="_blank"><img src="images/linkedin.png" alt="ln"/>LinkedIn</a></li>
+                  <li><a class="grey-text text-lighten-3" href="mailto:srmktr_googledsc@srmuniv.edu.in" target="_blank"><img src="images/email.png" alt="em"/>Email</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © SRM Developer Student Club 2018 - Initiated by <a href="https://developers.google.com/training/programs/india/#developer-student-clubs" target="_blank" style="color: #db3236;font-weight: bolder;"> Google Developers</a>
+            </div>
+          </div>
+        </footer>
+
+  </div>
+  
+  
+  
+
+
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $('.parallax').parallax();
+  });
+
+$(document).ready(function(){
+    $('.slider').slider({ indicators : false, height : 450});
+	
+  });
+
+  $(document).ready(function(){
+    $('.fixed-action-btn').floatingActionButton();
+  });
+        
+
+
+/*
+$('#learnmore').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 1000);
+    return false;
+});
+*/
+
+
+    $('.menu1').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 1000);
+    return false;
+});
+
+
+
+    $('.menu2').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 1000);
+    return false;
+});
+
+
+    $('.menu3').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 1000);
+    return false;
+});
+
+
+    $('.menu4').click(function(){
+
+
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 1000);
+    return false;
+});
+
+
+	 $(document).ready(function(){
+    $('.sidenav').sidenav({closeOnClick:true});
+  });
+ 
+</script>
+
+<script type="text/javascript">
+
+ preloader = new $.materialPreloader({
+        position: '50vh',
+         height: '5px',
+        col_1: '#159756',
+        col_2: '#da4733',
+        col_3: '#3b78e7',
+        col_4: '#fdba2c',
+        fadeIn: 50,
+        fadeOut: 50
+    });
+  preloader.on();
+ $(window).bind("load", function () {
+                $('#loader').delay(1600).fadeOut("slow");
+            });
+</script>
+<!--
+<script>
+  var config = {
+    apiKey: "AIzaSyCQYNLYmC_WHmrv7l3xphPsvetgNSEwj4o",
+    authDomain: "dscwebsite-23007.firebaseapp.com",
+    databaseURL: "https://dscwebsite-23007.firebaseio.com",
+    projectId: "dscwebsite-23007",
+    storageBucket: "dscwebsite-23007.appspot.com",
+    messagingSenderId: "83775788121"
+  };
+	firebase.initializeApp(config);
+	var firestore=firebase.firestore();
+
+
+//	var contactRef = firestore.collection("contact");
+$(document).ready(function(){
+	$("#submit").click(function(){
+		$("#submit").prop('disabled', true);
+
+
+		var name=$("#name").val();
+		var phone=$("#phone").val();
+		var email=$("#email").val();
+		var message=$("#message").val();
+    console.log("saving "+name+" "+email+" "+phone+" "+message);
+		firestore.collection("contact").doc(email).set({
+			name: name,
+ 			phone: phone,
+ 			email: email,
+ 			message:message
+	})
+	.then(function() {
+	   alert("Thank You! Your message was sent successfully!");
+	       $("#myform")[0].reset();
+$("#submit").prop('disabled', false)
+
+
+
+
+	})
+	.catch(function(error) {
+	    alert("Error! Please try again." );
+	    $("#submit").prop('disabled', true);
+
+
+	});
+
+
+	});
+	});
+
+$(document).ready(function () {
+  // Listen to submit event on the <form> itself!
+  $('#myform').submit(function (e) {
+
+    e.preventDefault();
+});
+});
+</script>
+-->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121065692-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-121065692-1');
+</script>
+
+</body>
+</html>
