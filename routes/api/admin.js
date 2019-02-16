@@ -11,7 +11,7 @@ const User = require('../../models/User');
 // @desc    Displays the login page
 // @access  Public
 router.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname + '/../../public/signin.html'));
+    res.sendFile(path.join(__dirname + '/../../public/login.html'));
 });
 
 // @route   GET admin/register
@@ -27,6 +27,7 @@ router.get('/register', (req, res) => {
 // @desc    Login
 // @access  Public
 router.post('/', (req, res, next) => {
+    console.log(req.body);
     passport.authenticate('local', {
         successRedirect: '/dashboard',
         failureRedirect: '/admin',

@@ -5,7 +5,8 @@ const { ensureAuthenticated } = require('../../config/auth');
 const router = express.Router();
 
 router.get('/', ensureAuthenticated, (req, res) => {
-    res.send(`${req.user.name}`);
+    //res.send(`${req.user.name}`);
+    res.sendFile(path.join(__dirname + '/../../public/dashboard.html'));
 });
 
 module.exports = router;
