@@ -238,6 +238,7 @@ i.red {
 .nav-link
 {
   color:yellow;
+  border-radius: 16px;
 }
 .the-legend {
   border-style: none;
@@ -322,11 +323,12 @@ body {
 .hvr-fade:hover,
 .hvr-fade:focus,
 .hvr-fade:active {
-  background-color: #f7c225;
+  background-color: #ffcc00;
   color: white;
 }
 .current {
-  background-color: #f7c225;
+  background-color: #ffcc00;
+  border-radius: 16px;
 }
 .parallax {
   /* The image used */
@@ -363,4 +365,3 @@ h1 {
 .display-4:hover {
   text-decoration: underline;
 }
-
