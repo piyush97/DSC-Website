@@ -44,7 +44,12 @@ const EventSchema = new Schema({
         }
     },
     image: {
-        type: String
+        url: {
+            type: String
+        },
+        id: {
+            type: String
+        }
     }
 });
 

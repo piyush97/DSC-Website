@@ -4,12 +4,16 @@ const bodyParser = require('body-parser');
 const passport = require('passport');
 const session = require('express-session');
 
+
 const app = express();
+
 
 const events = require('./routes/api/events');
 const blogs = require('./routes/api/blogs');
 const dashboard = require('./routes/api/dashboard');
 const admin = require('./routes/api/admin');
+
+
 
 // Passport config
 require('./config/passport')(passport);
