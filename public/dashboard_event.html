@@ -50,100 +50,79 @@
             </li>
 
           </ul>
-          <form class="form-inline my-2 my-lg-0">
+          <form method="GET" action="/admin/logout/" class="form-inline my-2 my-lg-0">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="login.html">Log out</a></button>
           </form>
         </div>
       </nav>
-    </section>
-    <section id="info">
-      <div class="jumbotron">
-        <h1 class="display-4">Update Event</h1>
-        <p class="lead">Please update your Event here. We will post this direvvtly on the developer student club
-          website. Thanks for your love and support</p>
-
-      </div>
-    </section>
-    <section id="blog_post">
-      <br><br>
-      <div class="container">
-        <div class="form-group">
-          <fieldset class="the-fieldset">
-            <legend class="the-legend">Update Event</legend>
-            <form>
-              <div class="form-group">
-                <label for="exampleFormControlInput1">Name of the Event</label>
-                <input type="text" class="form-control" id="title" placeholder="Enter your title here..">
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlInput1">Date(DD-MM-YYYY)</label>
-                <input type="text" class="form-control" id="title" placeholder="Enter your date(DD-MM-YYYY)here..">
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlInput1">Day</label>
-                <input type="text" class="form-control" id="title" placeholder="Enter the day here..">
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlInput1">Venue</label>
-                <input type="text" class="form-control" id="title" placeholder="Enter your Venue here..">
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlInput1">Hosted By</label>
-                <input type="text" class="form-control" id="title" placeholder="Enter your title here..">
-              </div>
-              <form class="form-inline">
-                <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Select Event</label>
-                <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                  <option selected>Events</option>
-                  <option value="1">Hackathon</option>
-                  <option value="2">Workshops</option>
-                  <option value="3">Tech-Talk</option>
-                </select>
-
+      <section id="blog_post">
+        <br><br>
+        <div class="container">
+          <div class="form-group">
+            <fieldset class="the-fieldset">
+              <legend class="the-legend">Update Event</legend>
+              <form method="POST" action="/events">
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Name of the Event</label>
+                  <input type="text" class="form-control" id="title" placeholder="Enter your title here.." name="name">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Date(YYYY-MM-DD)</label>
+                  <input type="text" class="form-control" id="title" placeholder="Enter your date(DD-MM-YYYY)here.."
+                    name="date">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Day</label>
+                  <input type="text" class="form-control" id="title" placeholder="Enter the day here.." name="day">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Venue</label>
+                  <input type="text" class="form-control" id="title" placeholder="Enter your Venue here.." name="venue">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Hosted By</label>
+                  <input type="text" class="form-control" id="title" placeholder="Enter your title here.." name="host">
+                </div>
 
                 <div class="form-group">
                   <label for="exampleFormControlTextarea1">Enter the description of Event</label>
                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"
-                    placeholder="Type your blog here"></textarea>
+                    placeholder="Type your blog here" name="description"></textarea>
                 </div>
-                <form>
-                  <fieldset class="the-fieldset">
-                    <div class="form-group">
-                      <label for="exampleFormControlFile1">Upload Image</label>
-                      <input type="file" class="form-control-file modify" id="exampleFormControlFile1" accept="image/*">
-                    </div>
-                  </fieldset>
-
-                </form><br>
-                <fieldset class="the-fieldset">
-                  <div class="form-group">
-                    <label for="exampleFormControlFile1">Hosts's Section</label><br>
-                    <label for="exampleFormControlInput1">Name</label>
-                    <input type="text" class="form-control" id="title" placeholder="Enter your name here..">
-                    <label for="exampleFormControlInput1">Phone number</label>
-                    <input type="text" class="form-control" id="title" placeholder="Enter your Phone number here..">
-                    <label for="exampleFormControlInput1">Email</label>
-                    <input type="text" class="form-control" id="title" placeholder="Enter your Email here..">
-                  </div>
-                </fieldset>
-
-              </form><br>
-              <button class="btn btn-primary" style="float: right" type="subit" id="submit">Publish</button>
-          </fieldset>
+                <div class="form-group">
+                  <label for="exampleFormControlFile1">Hosts's Section</label><br>
+                  <label for="exampleFormControlInput1">Name</label>
+                  <input type="text" class="form-control" id="title" placeholder="Enter your name here.."
+                    name="contact_name">
+                  <label for="exampleFormControlInput1">Phone number</label>
+                  <input type="text" class="form-control" id="title" placeholder="Enter your Phone number here.."
+                    name="contact_phone">
+                  <label for="exampleFormControlInput1">Email</label>
+                  <input type="text" class="form-control" id="title" placeholder="Enter your Email here.."
+                    name="contact_email">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlFile1">Upload Image</label>
+                  <input type="file" class="form-control-file modify" id="exampleFormControlFile1" accept="image/*">
+                </div>
+                <br><br>
+                <button class="btn btn-primary" style="float: right" type="subit" id="submit">Publish</button>
+              </form>
+            </fieldset>
+          </div>
         </div>
-      </div>
-    </section>
-    <section>
-      <footer class="page-footer font-small cyan darken-3">
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">2019 Copyright: Made with <i class="fa fa-heart"></i> by
-          <a href="http://www.msrit.edu/">DSC-RIT</a>
-        </div>
-        <!-- Copyright -->
+      </section>
+      <section>
+        <footer class="page-footer font-small cyan darken-3">
+          <!-- Copyright -->
+          <div class="footer-copyright text-center py-3">2019 Copyright: Made with <i class="fa fa-heart"></i> by
+            <a href="http://www.msrit.edu/">DSC-RIT</a>
+          </div>
+          <!-- Copyright -->
 
-      </footer>
+        </footer>
+      </section>
     </section>
-  </section>
 </body>
 
 </html>

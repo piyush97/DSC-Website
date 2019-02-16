@@ -25,7 +25,7 @@ const EventSchema = new Schema({
         default: "TBD",
     },
     host: {
-        type: [String],
+        type: String,
         default: "DSC-RIT"
     },
     description: {

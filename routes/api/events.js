@@ -28,7 +28,11 @@ router.post('/', ensureAuthenticated, (req, res) => {
         venue: req.body.venue,
         host: req.body.host,
         description: req.body.description,
-        contact: req.body.contact,
+        contact: {
+            name: req.body.contact_name,
+            phone: req.body.contact_phone,
+            email: req.body.contact_email
+        },
         image: req.body.image
     });
     newEvent.save()
