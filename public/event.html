@@ -23,15 +23,24 @@
         crossorigin="anonymous">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
         type="text/css">
+         <style>
+			.nav-pills .nav-link.active,
+			.nav-pills .show > .nav-link 
+			{
+  			color: #fff;
+  			background-color: #f7c225;
+			}
+ 		 </style>
 
 </head>
 
 <body>
+
   <div id = "navbar">
     <section id="navbarHome">
        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-0">
                     <a class="hide-on-med-and-down" id="logo-container" href="#" target="_blank" class="brand-logo">
-                    <img src="images/DSC_badge_Color.svg" width="55px" height="60px" style="padding:5px"></a>    
+                    <img src="images/dsclogo.png" width="55px" height="60px" style="padding-top:5px"></a>    
                         &nbsp; &nbsp;
 					<a class="navbar-brand" href="#" ><span style="color:#fcc719;font-size: 25px">Developer Student Club</span></a> &nbsp;
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,15 +48,15 @@
                     </button>
                   
                     <div class="collapse navbar-collapse" data-toggle="collapse" data-target=".navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav mr-auto">
+                      <ul class="navbar-nav mr-auto nav-pills">
                             <li class="nav-item active">
                                     <a class="nav-link hvr-fade py-2 px-3"  href="index.html" id = "ishank">Home<span class="sr-only">(current)</span></a>
                             </li> &nbsp;
                         <li class="nav-item active">
-                          <a class="nav-link hvr-fade py-2 px-3 " href="index.html#aboutUs">About Us<span class="sr-only">(current)</span></a>
+                          <a class="nav-link hvr-fade py-2 px-3 " href="index.html">About Us<span class="sr-only">(current)</span></a>
                         </li> &nbsp;
-                        <li class="nav-item dropdown active current">
-                            <a class="nav-link dropdown-toggle hvr-fade py-2 px-3 " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events</a>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle hvr-fade py-2 px-3 current" href="#event.html" style="color:white" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events</a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="event.html">Hackathon</a>
                                 <a class="dropdown-item" href="event.html">Workshops</a>
@@ -63,7 +72,7 @@
                           <a class="nav-link hvr-fade py-2 px-3" href="team.html">Team</a>
                         </li> &nbsp;
                         <li class="nav-item active">
-                                <a class="nav-link hvr-fade py-2 px-3 active " href="index.html#contactUs">Contact Us</a>
+                                <a class="nav-link hvr-fade py-2 px-3 " href="index.html">Contact Us</a>
                         </li>
                     </div>
                   </nav>
@@ -73,7 +82,7 @@
   <main role="main">
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-<br>   
+    
 <div class="container-fluid container">
            <div class="row">
             <div class="col-md-6">
@@ -130,7 +139,7 @@
   </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="/docs/4.2/assets/js/vendor/jquery-slim.min.js"></script>
+  <script>window.jQuery || document.write('<script src="/docs/4.2/assets/js/vendor/jquery-slim.min.js"></script>')
   </script>
   <script src="/docs/4.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP"
     crossorigin="anonymous"></script>
