@@ -1,5 +1,4 @@
 const express = require('express');
-const path = require('path');
 const bcrypt = require('bcryptjs');
 const passport = require('passport');
 
@@ -11,17 +10,8 @@ const User = require('../../models/User');
 // @desc    Displays the login page
 // @access  Public
 router.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname + '/../../public/login.html'));
+    res.render('login');
 });
-
-// @route   GET admin/register
-// @desc    Displays the signup page
-// @access  Public
-router.get('/register', (req, res) => {
-    // TODO: Make private access
-    res.sendFile(path.join(__dirname + '/../../public/signup.html'));
-});
-
 
 // @route   POST admin/
 // @desc    Login
@@ -107,8 +97,5 @@ router.post('/register', (req, res) => {
             });
     }
 })
-
-
-
 
 module.exports = router;
