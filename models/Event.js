@@ -20,6 +20,10 @@ const EventSchema = new Schema({
         required: true,
         default: "Saturday"
     },
+    time: {
+        type: String,
+        default: "12:00"
+    },
     venue: {
         type: String,
         default: "TBD",

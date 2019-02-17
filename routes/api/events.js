@@ -41,7 +41,8 @@ router.get('/', (req, res) => {
 // @desc    Add new post
 // @access  Private
 router.post('/', parser.single("image"), ensureAuthenticated, (req, res) => {
-    console.log(req.file); // to see what is returned to you
+    console.log(req.file);
+    console.log(ensureAuthenticated);
     const image = {};
     if (req.file) {
         image.url = req.file.url;
