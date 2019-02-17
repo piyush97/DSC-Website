@@ -15,7 +15,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
 
     <!-- Latest compiled JavaScript -->
+    
+    
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script
+			  src="https://code.jquery.com/jquery-2.1.0.min.js"
+			  integrity="sha256-8oQ1OnzE2X9v4gpRVRMb1DWHoPHJilbur1LP9ykQ9H0="
+			  crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
     <script src="contactresponse.js"></script>
@@ -33,6 +39,7 @@
    (function(){
       emailjs.init("user_gDwvyaj8rQwUWbZoylkMM");
    })();
+   
 </script>
     <style>
         .nav-pills .nav-link.active,
@@ -47,6 +54,9 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50" style="background: #eceff1">
+    <div class="spinner-wrapper">
+            <div class="spinner"></div>
+            </div>
 
     <div id="navbar">
 
@@ -378,7 +388,19 @@
         </section>
         <div class="parallax"></div>
     </section>
-
+    <script>
+            $(document).ready(function() {
+            //Preloader
+            $(window).on("load", function() {
+            preloaderFadeOutTime = 2000;
+            function hidePreloader() {
+            var preloader = $('.spinner-wrapper');
+            preloader.fadeOut(preloaderFadeOutTime);
+            }
+            hidePreloader();
+            });
+            });
+            </script>
 
 </body>
 
