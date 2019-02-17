@@ -1,5 +1,6 @@
 
   // Initialize Firebase
+  //This saves the data in firebase and sends a mail to both admin and user.
   var config = {
     apiKey: "AIzaSyB8V60o3bsX0Jmul3eeTfIDnevF0ZsKiaY",
     authDomain: "dscform-response.firebaseapp.com",
@@ -43,5 +44,9 @@ function func(){
      }
     var service_id = "default_service";
     var template_id = "template_aKJCAqDa";
-    emailjs.sendForm(service_id, template_id, template_params);
-    }
+    emailjs.send(service_id, template_id, template_params);
+    id1.value = " ";
+    id2.value = " ";
+    id3.value = " @gmail.com";
+    id5.value = " ";
+  }
