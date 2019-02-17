@@ -63,9 +63,9 @@
                     <li class="nav-item active">
                         <a class="nav-link hvr-fade py-2 px-3 " href="/events" style="color:white">Events</a>
                     </li> &nbsp;
-  <!--  <li class="nav-item active">
+                    <!--  <li class="nav-item active">
               </li> &nbsp; -->
-                <!-- <a class="nav-link hvr-fade py-2 px-3 " href="blogs.html">Blogs</a> -->
+                    <!-- <a class="nav-link hvr-fade py-2 px-3 " href="blogs.html">Blogs</a> -->
 
                     <li class="nav-item active">
                         <a class="nav-link hvr-fade py-2 px-3 " style="color: white" href="/team">Team</a>
@@ -208,14 +208,21 @@
 
         <div class="container-fluid">
             <div class="row">
+
+
+                <% events.forEach(function(event) { %>
                 <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <div class="box"><img class="card-img-top" src="./images/loader6.gif"
+                    <div class="card mb-4 box-shadow h-100">
+                        <div class="box"><img class="card-img-top img1 " src="<%= event.image.url %>"
                                 data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail"
-                                alt="Card image cap"></div>
+                                alt="Card image cap">
+                        </div>
                         <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
+                            <h4>Name: <%= event.name %></h4>&nbsp;
+                            <h6>Date & Day: <%= event.date %></h6>&nbsp;
+                            <h6>Venue: <%= event.venue %></h6>&nbsp;
+                            <h6>Hosted By: <%= event.host %></h6>&nbsp;
+                            <p class="card-text"><%= event.description %></p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
@@ -226,42 +233,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <div class="box"><img class="card-img-top" src="./images/web.gif"
-                                data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail"
-                                alt="Card image cap"></div>
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <div class="box"><img class="card-img-top" src="./images/loader6.gif"
-                                data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail"
-                                alt="Card image cap"></div>
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <% }); %>
+
             </div>
     </section><br />
     <section id="contactUs">

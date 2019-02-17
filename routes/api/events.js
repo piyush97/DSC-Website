@@ -2,7 +2,6 @@ const express = require('express');
 const multer = require('multer');
 const cloudinary = require("cloudinary");
 const cloudinaryStorage = require("multer-storage-cloudinary");
-const path = require('path');
 
 const router = express.Router();
 
@@ -33,7 +32,7 @@ const { ensureAuthenticated } = require('../../config/auth');
 router.get('/', (req, res) => {
     Event.find()
         .sort({ date: -1 })
-        .then(events => res.render('event', { events: events }))
+        .then(events => res.render('event', { events: events.slice(0, 3) }))
         .catch(err => res.status(404).json(err))
 });
 
