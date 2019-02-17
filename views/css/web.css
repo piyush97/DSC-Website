@@ -361,7 +361,3 @@ h1 {
 .box {
   overflow: hidden;
 }
-
-.display-4:hover {
-  text-decoration: underline;
-}
