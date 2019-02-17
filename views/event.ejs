@@ -2,18 +2,13 @@
 <html lang="en">
 
 <head>
-  <script src="jQuery.js"></script>
-  <script src="calc.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="./images/logo2.png" />
+  <link rel="shortcut icon" type="image/png" href="./images/logo2.png" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
-  <link rel="shortcut icon" type="image/png" href="images/logo2.png" />
-  <link rel="shortcut icon" type="image/png" href="images/logo2.png" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -21,101 +16,118 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/web.css">
-  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
-    type="text/css">
+  <link rel="stylesheet" href="./css/web.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+    type="text/css">
   <style>
     .nav-pills .nav-link.active,
     .nav-pills .show>.nav-link {
       color: #fff;
       background-color: #f7c225;
     }
+    .img1{
+      max-width: 500px;
+      max-height: 300px
+    }
   </style>
 
 </head>
 
-<body style="background: #eceff1">
+<body>
+
   <div id="navbar">
-    <section id="navbarHome">
-
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-0">
-        <a class="hide-on-med-and-down" id="logo-container" href="/" target="_blank" class="brand-logo">
-          <img src="images/DSC_badge_Color.svg" width="55px" height="60px" style="margin-right:8px"></a>
-        &nbsp; &nbsp;
-        <a class="navbar-brand" href="/"><span style="color:#fcc719;font-size: 40px; font-weight: 70px">Developer
+    <div id="navbar">
+      <section id="navbarHome">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-0">
+          <a class="hide-on-med-and-down" id="logo-container" href="#" target="_blank" class="brand-logo">
+            <img src="./images/DSC_badge_Color.svg" width="55px" height="60px" style="margin-right: 4px"></a>
+        <a class="navbar-brand" href="#"><span style="color:#fcc719;font-size: 20px; font-weight: 70px">Developer
             Student Club</span></a> &nbsp;
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <div class="collapse navbar-collapse" data-toggle="collapse" data-target=".navbar-collapse"
-          id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto nav-pills">
-            <li class="nav-item active">
-              <a class="nav-link hvr-fade py-2 px-3" href="/" id="ishank">Home<span class="sr-only">(current)</span></a>
-            </li> &nbsp;
-            <li class="nav-item active">
-              <a class="nav-link hvr-fade py-2 px-3 " href="/#aboutUs">About Us<span
-                  class="sr-only">(current)</span></a>
-            </li> &nbsp;
-            <li class="nav-item active">
-              <a class="nav-link hvr-fade py-2 px-3 current" href="#">Events</a>
-            </li> &nbsp;
+          <div class="collapse navbar-collapse" data-toggle="collapse" data-target=".navbar-collapse"
+            id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto nav-pills">
+              <li class="nav-item active">
+                <a class="nav-link hvr-fade py-2 px-3" href="/" id="ishank">Home<span
+                    class="sr-only">(current)</span></a>
+              </li> &nbsp;
+              <li class="nav-item active">
+                <a class="nav-link hvr-fade py-2 px-3 " href="/#aboutUs">About Us<span
+                    class="sr-only">(current)</span></a>
+              </li> &nbsp;
+              <li class="nav-item active">
+                <a class="nav-link hvr-fade py-2 px-3 current " href="#">Events</a>
+              </li> &nbsp;
 
-            <li class="nav-item active">
-              <a class="nav-link hvr-fade py-2 px-3 " href="/team">Team</a>
-            </li> &nbsp;
-            <li class="nav-item active">
-              <a class="nav-link hvr-fade py-2 px-3 " href="/#contactUs">Contact Us</a>
-            </li>
-        </div>
-      </nav>
-  </div>
+              <!-- <li class="nav-item active">
+                <a class="nav-link hvr-fade py-2 px-3 " href="/blogs">Blogs</a>
+              </li> &nbsp;
+ -->
 
-  <main role="main">
+              <li class="nav-item active">
+                <a class="nav-link hvr-fade py-2 px-3 #" href="/team">Team</a>
+              </li> &nbsp;
+              <li class="nav-item active">
+                <a class="nav-link hvr-fade py-2 px-3 " href="/#contactUs">Contact Us</a>
+              </li>
+          </div>
+        </nav>
+    </div>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <br>
-    <div class="container-fluid container">
-      <div class="row">
 
-        <% events.forEach(function(event) { %>
-        <div class="col-md-4">
-          <div class="card mb-4 box-shadow h-100">
-            <div class="box"><img class="card-img-top img1 " src="<%= event.image.url %>"
-                data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-            </div>
-            <div class="card-body">
-              <h4>Name: <%= event.name %></h4>&nbsp;
-              <h6>Date & Day: <%= event.date %></h6>&nbsp;
-              <h6>Venue: <%= event.venue %></h6>&nbsp;
-              <h6>Hosted By: <%= event.host %></h6>&nbsp;
-              <p class="card-text"><%= event.description %></p>
-              <div class="d-flex justify-content-between align-items-center">
+    <main role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <br>
+      <div class="container-fluid container">
+        <div class="row">
+
+          <% events.forEach(function(event) { %>
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow h-100">
+              <div class="box"><img class="card-img-top img1 " src="<%= event.image.url %>" 
+                  data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
               </div>
+              <div class="card-body">
+                <h4>Name: <%= event.name %></h4>&nbsp;
+                <h6>Date & Day: <%= event.date %></h6>&nbsp;
+                <h6>Venue: <%= event.venue %></h6>&nbsp;
+                <h6>Hosted By: <%= event.host %></h6>&nbsp;
+                <p class="card-text"><%= event.description %></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+
             </div>
 
           </div>
-
+          <% }); %>
         </div>
-        <% }); %>
       </div>
-    </div>
-  </main>
+    </main>
 
-  <footer class="container">
-    <div class="footer-copyright text-center py-3">2019 Copyright: Made with <i class="fa fa-heart"></i> by
-      DSC-<a href="http://www.msrit.edu/" style="color:#fcc719">RIT</a>
-    </div>
-  </footer>
+    <footer class="container">
+      <div class="footer-copyright text-center py-3">2019 Copyright: Made with <i class="fa fa-heart"></i> by
+        DSC-<a href="http://www.msrit.edu/" style="color:#fcc719">RIT</a>
+      </div>
+    </footer>
 
-  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
-  </script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-  </script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
 </body>
 
 </html>
