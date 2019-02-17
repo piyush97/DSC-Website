@@ -18,7 +18,7 @@ cloudinary.config({
 const storage = cloudinaryStorage({
     cloudinary: cloudinary,
     folder: "demo",
-    allowedFormats: ["jpg", "png"],
+    allowedFormats: ["jpg", "png", "svg", "gif"],
     transformation: [{ width: 500, height: 500, crop: "limit" }]
 });
 
@@ -43,8 +43,15 @@ router.get('/', (req, res) => {
 router.post('/', parser.single("image"), ensureAuthenticated, (req, res) => {
     console.log(req.file); // to see what is returned to you
     const image = {};
-    image.url = req.file.url;
-    image.id = req.file.public_id;
+    if (req.file) {
+        image.url = req.file.url;
+        image.id = req.file.public_id;
+    }
+    else {
+        image.url = "";
+        image.id = "";
+    }
+
 
     const newEvent = new Event({
         name: req.body.name,
