@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.get('/', ensureAuthenticated, (req, res) => {
     //res.send(`${req.user.name}`);
-    res.render('dashboard');
+    res.render('dashboard', { username: req.user.name });
 });
 
 module.exports = router;
