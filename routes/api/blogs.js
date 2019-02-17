@@ -3,6 +3,8 @@ const router = express.Router();
 
 //Blog model
 const Blog = require('../../models/Blog');
+const { ensureAuthenticated } = require('../../config/auth');
+
 
 // @route   GET api/blogs
 // @desc    Get all blogs
@@ -18,7 +20,7 @@ router.get('/', (req, res) => {
 // @desc    Add new post
 // @access  Public
 // TODO: Make it private
-router.post('/', (req, res) => {
+router.post('/', ensureAuthenticated, (req, res) => {
     const newBlog = new Blog({
         name: req.body.name
     })
@@ -32,7 +34,7 @@ router.post('/', (req, res) => {
 // @desc    Delete a post
 // @access  Public
 // TODO: Make it private
-router.delete('/:id', (req, res) => {
+router.delete('/:id', ensureAuthenticated, (req, res) => {
     Blog.findById(req.params.id)
         .then(blog => blog.remove().then(() => res.json({ Success: true })))
         .catch(err => res.status(404).json({ Success: false }))
