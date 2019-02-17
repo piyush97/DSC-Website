@@ -5,6 +5,7 @@ const passport = require('passport');
 const router = express.Router();
 
 const User = require('../../models/User');
+const { ensureAuthenticated } = require('../../config/auth');
 
 // @route   GET admin/
 // @desc    Displays the login page
@@ -28,7 +29,7 @@ router.post('/', (req, res, next) => {
 // @route   GET admin/logout
 // @desc    Logs out the user
 // @access  Public
-router.get('/logout', (req, res) => {
+router.get('/logout', ensureAuthenticated, (req, res) => {
     // TODO: Make private access
     req.logout();
     //req.flash('success_msg', 'You are logged out');
@@ -38,7 +39,7 @@ router.get('/logout', (req, res) => {
 // @route   POST admin/register
 // @desc    Creates a new user
 // @access  Public
-router.post('/register', (req, res) => {
+router.post('/register', ensureAuthenticated, (req, res) => {
     const { name, email, password, password2 } = req.body;
 
     let errors = [];
