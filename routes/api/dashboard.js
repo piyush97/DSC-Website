@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.get('/', ensureAuthenticated, (req, res) => {
     //res.send(`${req.user.name}`);
-    res.sendFile(path.join(__dirname + '/../../public/dashboard.html'));
+    res.render('dashboard');
 });
 
 module.exports = router;

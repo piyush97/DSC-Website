@@ -2,9 +2,8 @@
 <html>
 
 <head>
-  <script src="jQuery.js"></script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="dashboard.js"></script>
   <link rel="shortcut icon" type="image/png" href="images/logo2.png" />
   <link rel="shortcut icon" type="image/png" href="images/logo2.png" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -76,7 +75,7 @@
                       <form>
                         <div class="form-group">
                           <label for="exampleFormControlInput1">Title of blog</label>
-                          <input type="text" class="form-control" id="title" placeholder="Enter your title here..">
+                          <input type="text" class="form-control" id="title1" placeholder="Enter your title here..">
                         </div>
                         <div class="form-group">
                           <label for="exampleFormControlTextarea1">Enter the description</label>
@@ -96,8 +95,8 @@
                         <form>
                           <fieldset class="the-fieldset">
                             <div class="form-group">
-                              <label for="exampleFormControlFile1">Upload Additional Document or File</label>
-                              <input type="file" class="form-control-file modify" id="exampleFormControlFile1">
+                              <label for="exampleFormControlFile2">Upload Additional Document or File</label>
+                              <input type="file" class="form-control-file modify" id="exampleFormControlFile2">
                             </div>
                           </fieldset>
 
@@ -132,50 +131,50 @@
                       <form method="POST" action="/events" enctype="multipart/form-data">
                         <div class="form-group">
                           <label for="exampleFormControlInput1">Name of the Event</label>
-                          <input type="text" class="form-control" id="title" placeholder="Enter your title here.."
+                          <input type="text" class="form-control" id="title2" placeholder="Enter your title here.."
                             name="name">
                         </div>
                         <div class="form-group">
                           <label for="exampleFormControlInput1">Date(YYYY-MM-DD)</label>
-                          <input type="text" class="form-control" id="title"
+                          <input type="text" class="form-control" id="title3"
                             placeholder="Enter your date(YYYY-MM-DD)here.." name="date">
                         </div>
                         <div class="form-group">
                           <label for="exampleFormControlInput1">Day</label>
-                          <input type="text" class="form-control" id="title" placeholder="Enter the day here.."
+                          <input type="text" class="form-control" id="title4" placeholder="Enter the day here.."
                             name="day">
                         </div>
                         <div class="form-group">
                           <label for="exampleFormControlInput1">Venue</label>
-                          <input type="text" class="form-control" id="title" placeholder="Enter your Venue here.."
+                          <input type="text" class="form-control" id="title5" placeholder="Enter your Venue here.."
                             name="venue">
                         </div>
                         <div class="form-group">
                           <label for="exampleFormControlInput1">Hosted By</label>
-                          <input type="text" class="form-control" id="title" placeholder="Enter your title here.."
+                          <input type="text" class="form-control" id="title6" placeholder="Enter your title here.."
                             name="host">
                         </div>
 
                         <div class="form-group">
-                          <label for="exampleFormControlTextarea1">Enter the description of Event</label>
-                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"
+                          <label for="exampleFormControlTextarea2">Enter the description of Event</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea2" rows="10"
                             placeholder="Type your blog here" name="description"></textarea>
                         </div>
                         <div class="form-group">
-                          <label for="exampleFormControlFile1">Hosts's Section</label><br>
+                          <label for="exampleFormControlFile3">Hosts's Section</label><br>
                           <label for="exampleFormControlInput1">Name</label>
-                          <input type="text" class="form-control" id="title" placeholder="Enter your name here.."
+                          <input type="text" class="form-control" id="title7" placeholder="Enter your name here.."
                             name="contact_name">
                           <label for="exampleFormControlInput1">Phone number</label>
-                          <input type="text" class="form-control" id="title"
+                          <input type="text" class="form-control" id="title8"
                             placeholder="Enter your Phone number here.." name="contact_phone">
                           <label for="exampleFormControlInput1">Email</label>
-                          <input type="text" class="form-control" id="title" placeholder="Enter your Email here.."
+                          <input type="text" class="form-control" id="title9" placeholder="Enter your Email here.."
                             name="contact_email">
                         </div>
                         <div class="form-group">
-                          <label for="exampleFormControlFile1">Upload Image</label>
-                          <input type="file" class="form-control-file modify" id="exampleFormControlFile1"
+                          <label for="exampleFormControlFile4">Upload Image</label>
+                          <input type="file" class="form-control-file modify" id="exampleFormControlFile4"
                             accept="image/*" name="image">
                         </div>
 
