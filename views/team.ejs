@@ -2,31 +2,30 @@
 <html>
 
 <head>
-  <script src="jQuery.js"></script>
-  <script src="calc.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
+  <link rel="shortcut icon" type="image/png" href="./images/logo2.png" />
+  <link rel="shortcut icon" type="image/png" href="./images/logo2.png" />
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
-  <link rel="shortcut icon" type="image/png" href="images/logo2.png" />
-  <link rel="shortcut icon" type="image/png" href="images/logo2.png" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/web.css">
-  <link rel="stylesheet" href="css/team.css">
-  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
-    type="text/css">
+
+  <link rel="stylesheet" href="./css/web.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+    type="text/css">
   <style>
     .nav-pills .nav-link.active,
     .nav-pills .show>.nav-link {
@@ -35,567 +34,392 @@
     }
   </style>
 
+  <!-- parallex effect -->
+
 </head>
 
-<body style="background: #1a77d3">
+<body data-spy="scroll" data-target=".navbar" data-offset="50" style="background: #eceff1">
+
   <div id="navbar">
-    <section id="navbarHome">
 
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-0">
-        <a class="hide-on-med-and-down" id="logo-container" href="/" target="_blank" class="brand-logo">
-          <img src="images/DSC_badge_Color.svg" width="55px" height="60px" style="margin-right:8px"></a>
-        &nbsp; &nbsp;
-        <a class="navbar-brand" href="/"><span style="color:#fcc719;font-size: 40px; font-weight: 70px">Developer
-            Student Club</span></a> &nbsp;
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-0">
+      <a class="hide-on-med-and-down" id="logo-container" href="#" target="_self" class="brand-logo">
+        <img src="./images/DSC_badge_Color.svg" width="55px" height="60px" style="margin-right: 8px"></a>
+      <a class="navbar-brand" href="#"><span style="color:#fcc719;font-size: 40px; font-weight: 70px"> Developer
+          Student Club</span></a> &nbsp;
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse" data-toggle="collapse" data-target=".navbar-collapse"
-          id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto nav-pills">
-            <li class="nav-item active">
-              <a class="nav-link hvr-fade py-2 px-3" href="/" id="ishank">Home<span class="sr-only">(current)</span></a>
-            </li> &nbsp;
-            <li class="nav-item active">
-              <a class="nav-link hvr-fade py-2 px-3 " href="/#aboutUs">About Us<span
-                  class="sr-only">(current)</span></a>
-            </li> &nbsp;
-            <li class="nav-item active">
-              <a class="nav-link hvr-fade py-2 px-3 " href="/events">Events</a>
-            </li> &nbsp;
+      <div class="collapse navbar-collapse" data-toggle="collapse" data-target=".navbar-collapse"
+        id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto nav-pills">
+          <li class="nav-item">
+            <a class="nav-link hvr-fade py-2 px-3" href="#home" id="ishank" style="color:white">Home<span
+                class="sr-only">(current)</span></a>
+          </li> &nbsp;
+          <li class="nav-item active">
+            <a class="nav-link hvr-fade py-2 px-3" href="#aboutUs" style="color:white">About Us<span
+                class="sr-only">(current)</span></a>
+          </li> &nbsp;
+          <li class="nav-item active">
+            <a class="nav-link hvr-fade py-2 px-3 " href="/events" style="color:white">Events</a>
+          </li> &nbsp;
+          <!--  <li class="nav-item active">
+              </li> &nbsp; -->
+          <!-- <a class="nav-link hvr-fade py-2 px-3 " href="blogs.html">Blogs</a> -->
 
-            <li class="nav-item active">
-              <a class="nav-link hvr-fade py-2 px-3 current #" href="#">Team</a>
-            </li> &nbsp;
-            <li class="nav-item active">
-              <a class="nav-link hvr-fade py-2 px-3 " href="/#contactUs">Contact Us</a>
-            </li>
+          <li class="nav-item active">
+            <a class="nav-link hvr-fade py-2 px-3 " style="color: white" href="/team">Team</a>
+          </li> &nbsp;
+          <li class="nav-item active">
+            <a class="nav-link hvr-fade py-2 px-3 " style="color: white " href="#contactUs">Contact Us</a>
+          </li>
+      </div>
+    </nav>
+  </div>
+  <div id="home">
+    <div class="parallax">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div id="content">
+              <br><br>
+              <h1><span style="color:beige">DSC</span><span style="color:#fcc719"> RIT</span></h1>
+              <h3 style="color:beige">Student Internships | Projects | Hackathons | Makeathons | Contests
+                | Workshops</h3>
+              <hr><br>
+
+            </div>
+          </div>
         </div>
-      </nav>
-  </div>
-
-
-  <div style="background:#fcc719; text-align:center; padding-top: 60px; padding-bottom: 60px; padding-left: -100px">
-    <h1 class="display-4"
-      style="font-size: 70px; font-weight:60px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
-      Our Team</h1>
-    <p style="font-size: 30px; margin-left: 5px; margin-left: 5px">Each team member is conversant with his domain.
-      Collectively, we work towards a common
-      goal of helping university students to emerge as developers.</p>
-  </div>
-
-
-  </div>
-  <div class="container">
-    <div class="row" style="margin-top:100px">
-      <div class="col-md-4 " style="text-align: center">
-
-        <img
-          src="https://media.licdn.com/dms/image/C5103AQEMnIPsy5V8TQ/profile-displayphoto-shrink_800_800/0?e=1555545600&amp;v=beta&amp;t=EcZ_kt_zh6LM87gL5jrVSsn96XfFX6DEhSMokVBCZhg"
-          aria-label="Piyush M" alt="Avatar" style="width:70%; border-radius: 50%">
-
-
-        <h2>Piyush Mehta</h2>
-        <p class="title">Developer and head</p>
-        <center><a class="grey-text text-lighten-3 links" href="http://www.facebook.com/ " target="_blank"><img
-          src="./images/facebook-square-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-  <a class="grey-text text-lighten-3 links" href="http://www.twitter.com/" target="_blank"><img
-          src="./images/twitter-square-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-  <a class="grey-text text-lighten-3 links" href="http://www.linkedin.com/company/"
-      target="_blank"></i>&nbsp;<img src="./images/linkedin-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-      <a class="grey-text text-lighten-3 links" href="https://github.com/piyush97/DSC-Website"
-          target="_blank"></i>&nbsp;<img src="./images/github-brands.svg" height="20" width="20"
-              alt="Not displaying">&nbsp;&nbsp;</a>
-</center>
-        <p>Pawan is a code blooded interest with interest in Machine Learning and data science</p>
-        <p>pawan@gmail.com</p>
-        <!--<p><button class="button"><a href="http://www.linkedin.com">Contact</a></button></p>-->
-
-
-      </div>
-      <div class="col-md-4 " style="text-align: center">
-
-        <img
-          src="https://media.licdn.com/dms/image/C5103AQFz6yyANrIzag/profile-displayphoto-shrink_800_800/0?e=1555545600&amp;v=beta&amp;t=eoywI8LLTUuuj3juFv2yH6v6eoTAR8ymwRF89CcLjXw"
-          aria-label="Divya K" alt="Avatar" style="width:70%; border-radius: 50%">
-
-        <h2>Divya K</h2>
-        <p class="title">Developer and head</p>
-        <center><a class="grey-text text-lighten-3 links" href="http://www.facebook.com/ " target="_blank"><img
-          src="./images/facebook-square-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-  <a class="grey-text text-lighten-3 links" href="http://www.twitter.com/" target="_blank"><img
-          src="./images/twitter-square-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-  <a class="grey-text text-lighten-3 links" href="http://www.linkedin.com/company/"
-      target="_blank"></i>&nbsp;<img src="./images/linkedin-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-      <a class="grey-text text-lighten-3 links" href="https://github.com/piyush97/DSC-Website"
-          target="_blank"></i>&nbsp;<img src="./images/github-brands.svg" height="20" width="20"
-              alt="Not displaying">&nbsp;&nbsp;</a>
-</center>
-        <p>Pawan is a code blooded interest with interest in Machine Learning and data science</p>
-        <p>pawan@gmail.com</p>
-        <!--<p><button class="button"><a href="http://www.linkedin.com">Contact</a></button></p>-->
-
-      </div>
-      <div class="col-md-4 " style="text-align: center">
-
-        <img
-          src="https://media.licdn.com/dms/image/C5103AQEya5JfJQ4aRw/profile-displayphoto-shrink_800_800/0?e=1555545600&amp;v=beta&amp;t=ma7WbVFtixu2r6l3h0opj-kI9kEnZ-L2gd4A9WCDBSs"
-          aria-label="Hemant J" alt="Avatar" style="width:70%; border-radius: 50%">
-
-        <h2>Hemant Joshi</h2>
-        <p class="title">Developer and head</p>
-        <center><a class="grey-text text-lighten-3 links" href="http://www.facebook.com/ " target="_blank"><img
-          src="./images/facebook-square-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-  <a class="grey-text text-lighten-3 links" href="http://www.twitter.com/" target="_blank"><img
-          src="./images/twitter-square-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-  <a class="grey-text text-lighten-3 links" href="http://www.linkedin.com/company/"
-      target="_blank"></i>&nbsp;<img src="./images/linkedin-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-      <a class="grey-text text-lighten-3 links" href="https://github.com/piyush97/DSC-Website"
-          target="_blank"></i>&nbsp;<img src="./images/github-brands.svg" height="20" width="20"
-              alt="Not displaying">&nbsp;&nbsp;</a>
-</center>
-        <p>Pawan is a code blooded interest with interest in Machine Learning and data science</p>
-        <p>pawan@gmail.com</p>
-        <!--<p><button class="button"><a href="http://www.linkedin.com">Contact</a></button></p>-->
-
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-4 " style="text-align: center">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+      </ol>
+      <div class="carousel-inner">
 
-        <img
-          src="https://media.licdn.com/dms/image/C5103AQHc-Vl3TOuxDA/profile-displayphoto-shrink_800_800/0?e=1555545600&amp;v=beta&amp;t=m6sZWGjG2wvgh7dx1cPP5QiaT181yEBnRHPfBlZewds"
-          aria-label="Pawan Ranjith" alt="Avatar" style="width:70%; border-radius: 50%">
+        <div class="carousel-item active">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+          <img class="d-block w-100" src="./images/0.jpg" alt="Second slide">
 
-        <h2>MS Pavan Ranjith</h2>
-        <p class="title">Developer and head</p>
-        <center><a class="grey-text text-lighten-3 links" href="http://www.facebook.com/ " target="_blank"><img
-          src="./images/facebook-square-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-  <a class="grey-text text-lighten-3 links" href="http://www.twitter.com/" target="_blank"><img
-          src="./images/twitter-square-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-  <a class="grey-text text-lighten-3 links" href="http://www.linkedin.com/company/"
-      target="_blank"></i>&nbsp;<img src="./images/linkedin-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-      <a class="grey-text text-lighten-3 links" href="https://github.com/piyush97/DSC-Website"
-          target="_blank"></i>&nbsp;<img src="./images/github-brands.svg" height="20" width="20"
-              alt="Not displaying">&nbsp;&nbsp;</a>
-</center>
-        <p>Pawan is a code blooded interest with interest in Machine Learning and data science</p>
-        <p>pawan@gmail.com</p>
-        <!--<p><button class="button"><a href="http://www.linkedin.com">Contact</a></button></p>-->
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+          <img class="d-block w-100" src="./images/1.jpg" alt="Second slide">
 
-      </div>
-      <div class="col-md-4 " style="text-align: center">
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+          <img class="d-block w-100" src="./images/2.jpeg" alt="Second slide">
 
-        <img
-          src="https://media.licdn.com/dms/image/C5103AQGRZIisykn17g/profile-displayphoto-shrink_800_800/0?e=1555545600&amp;v=beta&amp;t=8pvNeALVB5xKZ9QTCbhMRWWnmFydXdTZoJPrsnKTcFc"
-          aria-label="Vikas NS" alt="Avatar" style="width:70%; border-radius: 50%">
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+          <img class="d-block w-100" src="./images/3.png" alt="Second slide">
 
-        <h2>Vikas NS</h2>
-        <p class="title">Developer and head</p>
-        <center><a class="grey-text text-lighten-3 links" href="http://www.facebook.com/ " target="_blank"><img
-          src="./images/facebook-square-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-  <a class="grey-text text-lighten-3 links" href="http://www.twitter.com/" target="_blank"><img
-          src="./images/twitter-square-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-  <a class="grey-text text-lighten-3 links" href="http://www.linkedin.com/company/"
-      target="_blank"></i>&nbsp;<img src="./images/linkedin-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-      <a class="grey-text text-lighten-3 links" href="https://github.com/piyush97/DSC-Website"
-          target="_blank"></i>&nbsp;<img src="./images/github-brands.svg" height="20" width="20"
-              alt="Not displaying">&nbsp;&nbsp;</a>
-</center>
-        <p>Pawan is a code blooded interest with interest in Machine Learning and data science</p>
-        <p>pawan@gmail.com</p>
-        <!--<p><button class="button"><a href="http://www.linkedin.com">Contact</a></button></p>-->
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+          <img class="d-block w-100" src="./images/4.png" alt="Second slide">
 
-      </div>
-      <div class="col-md-4 " style="text-align: center">
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+          <img class="d-block w-100" src="./images/5.jpg" alt="Second slide">
 
-        <img
-          src="https://media.licdn.com/dms/image/C5103AQFi9hSfeMAa0A/profile-displayphoto-shrink_800_800/0?e=1555545600&amp;v=beta&amp;t=wFHlwIWzZoRERvBzUjgU_VdMzN1X_kJzZRXmcenleV4"
-          aria-label="Mohit Kumar" alt="Avatar" style="width:70%; border-radius: 50%">
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+          <img class="d-block w-100" src="./images/6.png" alt="Second slide">
 
-        <h2>Mohit Kumar</h2>
-        <p class="title">Developer and head</p>
-        <center><a class="grey-text text-lighten-3 links" href="http://www.facebook.com/ " target="_blank"><img
-          src="./images/facebook-square-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-  <a class="grey-text text-lighten-3 links" href="http://www.twitter.com/" target="_blank"><img
-          src="./images/twitter-square-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-  <a class="grey-text text-lighten-3 links" href="http://www.linkedin.com/company/"
-      target="_blank"></i>&nbsp;<img src="./images/linkedin-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-      <a class="grey-text text-lighten-3 links" href="https://github.com/piyush97/DSC-Website"
-          target="_blank"></i>&nbsp;<img src="./images/github-brands.svg" height="20" width="20"
-              alt="Not displaying">&nbsp;&nbsp;</a>
-</center>
-        <p>Pawan is a code blooded interest with interest in Machine Learning and data science</p>
-        <p>pawan@gmail.com</p>
-        <!-- <p><button class="button"><a href="http://www.linkedin.com">Contact</a></button></p>-->
+        </div>
 
+        <div class="carousel-item">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+          <img class="d-block w-100" src="./images/7.jpg" alt="Second slide">
+
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+          <img class="d-block w-100" src="./images/8.jpg" alt="Third slide">
+
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-4 " style="text-align: center">
-
-        <img
-          src="https://media.licdn.com/dms/image/C5103AQHFe5dQ-5TFjg/profile-displayphoto-shrink_800_800/0?e=1555545600&amp;v=beta&amp;t=5I5iK3XRJHb40X1di2wDPhZkehGL_9ebkm3OhIXzS2U"
-          aria-label="Kavya Reddy" alt="Avatar" style="width:70%; border-radius: 50%">
-
-        <h2>Kavya Reddy</h2>
-        <p class="title">Developer and head</p>
-        <center><a class="grey-text text-lighten-3 links" href="http://www.facebook.com/ " target="_blank"><img
-          src="./images/facebook-square-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-  <a class="grey-text text-lighten-3 links" href="http://www.twitter.com/" target="_blank"><img
-          src="./images/twitter-square-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-  <a class="grey-text text-lighten-3 links" href="http://www.linkedin.com/company/"
-      target="_blank"></i>&nbsp;<img src="./images/linkedin-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-      <a class="grey-text text-lighten-3 links" href="https://github.com/piyush97/DSC-Website"
-          target="_blank"></i>&nbsp;<img src="./images/github-brands.svg" height="20" width="20"
-              alt="Not displaying">&nbsp;&nbsp;</a>
-</center>
-        <p>Pawan is a code blooded interest with interest in Machine Learning and data science</p>
-        <p>pawan@gmail.com</p>
-        <!-- <p><button class="button"><a href="http://www.linkedin.com">Contact</a></button></p>-->
-
-      </div>
-      <div class="col-md-4 " style="text-align: center">
-
-        <img
-          src="https://media.licdn.com/dms/image/C5603AQGo5JtphaQ6yw/profile-displayphoto-shrink_800_800/0?e=1555545600&amp;v=beta&amp;t=dxYiZEN_keVDhE0PZKzXcCmzOnV_GW2tJHgJ9Z0-mfg"
-          aria-label="Aditya G" alt="Avatar" style="width:70%; border-radius: 50%">
-
-        <h2>Aditya G</h2>
-        <p class="title">Developer and head</p>
-        <center><a class="grey-text text-lighten-3 links" href="http://www.facebook.com/ " target="_blank"><img
-          src="./images/facebook-square-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-  <a class="grey-text text-lighten-3 links" href="http://www.twitter.com/" target="_blank"><img
-          src="./images/twitter-square-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-  <a class="grey-text text-lighten-3 links" href="http://www.linkedin.com/company/"
-      target="_blank"></i>&nbsp;<img src="./images/linkedin-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-      <a class="grey-text text-lighten-3 links" href="https://github.com/piyush97/DSC-Website"
-          target="_blank"></i>&nbsp;<img src="./images/github-brands.svg" height="20" width="20"
-              alt="Not displaying">&nbsp;&nbsp;</a>
-</center>
-        <p>Pawan is a code blooded interest with interest in Machine Learning and data science</p>
-        <p>pawan@gmail.com</p>
-        <!--<p><button class="button"><a href="http://www.linkedin.com">Contact</a></button></p>-->
-
-      </div>
-      <div class="col-md-4 " style="text-align: center">
-
-        <img
-          src="https://media.licdn.com/dms/image/C5103AQFDfkS8gXOpRw/profile-displayphoto-shrink_800_800/0?e=1555545600&amp;v=beta&amp;t=aOBiCHAfF7KzBr5wPIH9pOIquEliK2RNyyM24REoCZ4"
-          aria-label="Karthik VR" alt="Avatar" style="width:70%; border-radius: 50%">
-
-        <h2>Karthik VR</h2>
-        <p class="title">Developer and head</p>
-        <center><a class="grey-text text-lighten-3 links" href="http://www.facebook.com/ " target="_blank"><img
-          src="./images/facebook-square-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-  <a class="grey-text text-lighten-3 links" href="http://www.twitter.com/" target="_blank"><img
-          src="./images/twitter-square-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-  <a class="grey-text text-lighten-3 links" href="http://www.linkedin.com/company/"
-      target="_blank"></i>&nbsp;<img src="./images/linkedin-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-      <a class="grey-text text-lighten-3 links" href="https://github.com/piyush97/DSC-Website"
-          target="_blank"></i>&nbsp;<img src="./images/github-brands.svg" height="20" width="20"
-              alt="Not displaying">&nbsp;&nbsp;</a>
-</center>
-        <p>Pawan is a code blooded interest with interest in Machine Learning and data science</p>
-        <p>pawan@gmail.com</p>
-        <!--<p><button class="button"><a href="http://www.linkedin.com">Contact</a></button></p>-->
-
-      </div>
-
-      <div class="col-md-4 " style="text-align: center">
-
-        <img src="https://avatars2.githubusercontent.com/u/41142333?s=460&amp;v=4" aria-label="Rohit PN" alt="Avatar"
-          style="width:70%; border-radius: 50%">
-
-        <h2>Rohit Nagraj</h2>
-        <p class="title">Developer and head</p>
-        <center><a class="grey-text text-lighten-3 links" href="http://www.facebook.com/ " target="_blank"><img
-          src="./images/facebook-square-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-  <a class="grey-text text-lighten-3 links" href="http://www.twitter.com/" target="_blank"><img
-          src="./images/twitter-square-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-  <a class="grey-text text-lighten-3 links" href="http://www.linkedin.com/company/"
-      target="_blank"></i>&nbsp;<img src="./images/linkedin-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-      <a class="grey-text text-lighten-3 links" href="https://github.com/piyush97/DSC-Website"
-          target="_blank"></i>&nbsp;<img src="./images/github-brands.svg" height="20" width="20"
-              alt="Not displaying">&nbsp;&nbsp;</a>
-</center>
-        <p>Pawan is a code blooded interest with interest in Machine Learning and data science</p>
-        <p>pawan@gmail.com</p>
-        <!--<p><button class="button"><a href="http://www.linkedin.com">Contact</a></button></p>-->
-
-      </div>
-
-      <div class="col-md-4 " style="text-align: center">
-
-        <img
-          src="https://media.licdn.com/dms/image/C5103AQGpQNeowC0afg/profile-displayphoto-shrink_200_200/0?e=1555545600&amp;v=beta&amp;t=Lsk9APQ7o1DrmbsxRrY6bplxZXx2APBCdGolMi8pjyQ"
-          aria-label="Nimish Bongale" alt="Avatar" style="width:70%; border-radius: 50%">
-
-        <h2>Nimish Bongale</h2>
-        <p class="title">Developer and head</p>
-        <center><a class="grey-text text-lighten-3 links" href="http://www.facebook.com/ " target="_blank"><img
-          src="./images/facebook-square-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-  <a class="grey-text text-lighten-3 links" href="http://www.twitter.com/" target="_blank"><img
-          src="./images/twitter-square-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-  <a class="grey-text text-lighten-3 links" href="http://www.linkedin.com/company/"
-      target="_blank"></i>&nbsp;<img src="./images/linkedin-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-      <a class="grey-text text-lighten-3 links" href="https://github.com/piyush97/DSC-Website"
-          target="_blank"></i>&nbsp;<img src="./images/github-brands.svg" height="20" width="20"
-              alt="Not displaying">&nbsp;&nbsp;</a>
-</center>
-        <p>Pawan is a code blooded interest with interest in Machine Learning and data science</p>
-        <p>pawan@gmail.com</p>
-        <!--<p><button class="button"><a href="http://www.linkedin.com">Contact</a></button></p>-->
-
-      </div>
-
-      <div class="col-md-4 " style="text-align: center">
-
-        <img
-          src="https://media.licdn.com/dms/image/C5103AQFNDS7oIXU2kQ/profile-displayphoto-shrink_800_800/0?e=1555545600&amp;v=beta&amp;t=Y0yJwMMydFF7d6HjKXmRPWeniavnjKmLDpb0d61x_1o"
-          aria-label="Rishabh P" alt="Avatar" style="width:70%; border-radius: 50%">
-
-        <h2>Rishabh Priyadarshi</h2>
-        <p class="title">Developer and head</p>
-        <center><a class="grey-text text-lighten-3 links" href="http://www.facebook.com/ " target="_blank"><img
-          src="./images/facebook-square-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-  <a class="grey-text text-lighten-3 links" href="http://www.twitter.com/" target="_blank"><img
-          src="./images/twitter-square-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-  <a class="grey-text text-lighten-3 links" href="http://www.linkedin.com/company/"
-      target="_blank"></i>&nbsp;<img src="./images/linkedin-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-      <a class="grey-text text-lighten-3 links" href="https://github.com/piyush97/DSC-Website"
-          target="_blank"></i>&nbsp;<img src="./images/github-brands.svg" height="20" width="20"
-              alt="Not displaying">&nbsp;&nbsp;</a>
-</center>
-        <p>Pawan is a code blooded interest with interest in Machine Learning and data science</p>
-        <p>pawan@gmail.com</p>
-        <!--<p><button class="button"><a href="http://www.linkedin.com">Contact</a></button></p>-->
+  </div>
+  </div>
 
 
-      </div>
+  <section id="aboutUs">
+    <div class=" -grey " id="second" class="section scrollspy"
+      style="margin-bottom: 0; text-align: center; padding-top:40px;">
+      <br>
 
-      <div class="col-md-4 " style="text-align: center">
-
-        <img
-          src="https://media.licdn.com/dms/image/C4E03AQFkKGGhJThWxg/profile-displayphoto-shrink_800_800/0?e=1555545600&amp;v=beta&amp;t=cVT0VE8bd2rlnpLx6zM-uvfYmUpWIbX7RhUl7q-_7ik"
-          aria-label="Raghav M" alt="Avatar" style="width:70%; border-radius: 50%">
-
-        <h2>Raghav Maheshwari</h2>
-        <p class="title">Developer and head</p>
-        <center><a class="grey-text text-lighten-3 links" href="http://www.facebook.com/ " target="_blank"><img
-          src="./images/facebook-square-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-  <a class="grey-text text-lighten-3 links" href="http://www.twitter.com/" target="_blank"><img
-          src="./images/twitter-square-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-  <a class="grey-text text-lighten-3 links" href="http://www.linkedin.com/company/"
-      target="_blank"></i>&nbsp;<img src="./images/linkedin-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-      <a class="grey-text text-lighten-3 links" href="https://github.com/piyush97/DSC-Website"
-          target="_blank"></i>&nbsp;<img src="./images/github-brands.svg" height="20" width="20"
-              alt="Not displaying">&nbsp;&nbsp;</a>
-</center>
-        <p>Pawan is a code blooded interest with interest in Machine Learning and data science</p>
-        <p>pawan@gmail.com</p>
-        <!--<p><button class="button"><a href="http://www.linkedin.com">Contact</a></button></p>-->
-
-      </div>
-
-      <div class="col-md-4 " style="text-align: center">
-
-        <img
-          src="https://media.licdn.com/dms/image/C4E03AQHvSt3TESPpvQ/profile-displayphoto-shrink_800_800/0?e=1555545600&amp;v=beta&amp;t=AtLMQl4_PPbHMMjJjmVYVWdaduHAGbj1VrlMu3mKCd4"
-          aria-label="Tanisha S" alt="Avatar" style="width:70%; border-radius: 50%">
-
-        <h2>Tanisha Sabherwal</h2>
-        <p class="title">Developer and head</p>
-        <center><a class="grey-text text-lighten-3 links" href="http://www.facebook.com/ " target="_blank"><img
-          src="./images/facebook-square-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-  <a class="grey-text text-lighten-3 links" href="http://www.twitter.com/" target="_blank"><img
-          src="./images/twitter-square-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-  <a class="grey-text text-lighten-3 links" href="http://www.linkedin.com/company/"
-      target="_blank"></i>&nbsp;<img src="./images/linkedin-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-      <a class="grey-text text-lighten-3 links" href="https://github.com/piyush97/DSC-Website"
-          target="_blank"></i>&nbsp;<img src="./images/github-brands.svg" height="20" width="20"
-              alt="Not displaying">&nbsp;&nbsp;</a>
-</center>
-        <p>Pawan is a code blooded interest with interest in Machine Learning and data science</p>
-        <p>pawan@gmail.com</p>
-        <!--<p><button class="button"><a href="http://www.linkedin.com">Contact</a></button></p>-->
-
-      </div>
-
-
-      <div class="col-md-4 " style="text-align: center">
-
-        <img
-          src="https://media.licdn.com/dms/image/C5103AQGUlLJIBnvLAw/profile-displayphoto-shrink_800_800/0?e=1555545600&amp;v=beta&amp;t=bZgexdX-2GLtwKMPNus7HdBGGeBrpUZWJ3RhBuOqCl4"
-          aria-label="Ishank Sharma" alt="Avatar" style="width:70%; border-radius: 50%">
-
-        <h2>Ishank Sharma</h2>
-        <p class="title">Developer and head</p>
-        <center><a class="grey-text text-lighten-3 links" href="http://www.facebook.com/ " target="_blank"><img
-          src="./images/facebook-square-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-  <a class="grey-text text-lighten-3 links" href="http://www.twitter.com/" target="_blank"><img
-          src="./images/twitter-square-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-  <a class="grey-text text-lighten-3 links" href="http://www.linkedin.com/company/"
-      target="_blank"></i>&nbsp;<img src="./images/linkedin-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-      <a class="grey-text text-lighten-3 links" href="https://github.com/piyush97/DSC-Website"
-          target="_blank"></i>&nbsp;<img src="./images/github-brands.svg" height="20" width="20"
-              alt="Not displaying">&nbsp;&nbsp;</a>
-</center>
-        <p>Pawan is a code blooded interest with interest in Machine Learning and data science</p>
-        <p>pawan@gmail.com</p>
-        <!--<p><button class="button"><a href="http://www.linkedin.com">Contact</a></button></p>-->
-
-      </div>
-
-      <div class="col-md-4 " style="text-align: center">
-
-        <img
-          src="https://media.licdn.com/dms/image/C5103AQFMPhZipI86cg/profile-displayphoto-shrink_800_800/0?e=1555545600&amp;v=beta&amp;t=o1EsI_St6d8Cj2OhLncIzn4nfu5GnUFiL569ihohSNo"
-          aria-label="Ayush Ujjwal" alt="Avatar" style="width:70%; border-radius: 50%">
-
-        <h2>Ayush Ujjwal</h2>
-        <p class="title">Developer and head</p>
-        <center><a class="grey-text text-lighten-3 links" href="http://www.facebook.com/ " target="_blank"><img
-          src="./images/facebook-square-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-  <a class="grey-text text-lighten-3 links" href="http://www.twitter.com/" target="_blank"><img
-          src="./images/twitter-square-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-  <a class="grey-text text-lighten-3 links" href="http://www.linkedin.com/company/"
-      target="_blank"></i>&nbsp;<img src="./images/linkedin-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-      <a class="grey-text text-lighten-3 links" href="https://github.com/piyush97/DSC-Website"
-          target="_blank"></i>&nbsp;<img src="./images/github-brands.svg" height="20" width="20"
-              alt="Not displaying">&nbsp;&nbsp;</a>
-</center>
-        <p>Pawan is a code blooded interest with interest in Machine Learning and data science</p>
-        <p>pawan@gmail.com</p>
-        <!--<p><button class="button"><a href="http://www.linkedin.com">Contact</a></button></p>-->
-
-      </div>
-      <div class="col-md-4 " style="text-align: center">
-
-        <img src="./images/Abhay.jpeg" aria-label="Tanisha S" alt="Avatar" style="width:70%; border-radius: 50%">
-
-        <h2>Abhay Desalli</h2>
-        <p class="title">Developer</p>
-        <p>
-          <a href="https://www.github.com/AbhayABD"><img src="./images/github-brands.svg" height="40" width="40"
-              alt="Github"></a>
-          <a href="https://www.linkedin.com/in/abhay-d-525804b9/"><img src="./images/linkedin-brands.svg" height="40"
-              width="40" alt="Linkedin"></a>
-        </p>
-        <p>abhaydesalliabd@gmail.com</p>
-
-
-
-        <h2>Satyam Kumar</h2>
-        <p class="title">Developer and head</p>
-        <center><a class="grey-text text-lighten-3 links" href="http://www.facebook.com/ " target="_blank"><img
-          src="./images/facebook-square-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-  <a class="grey-text text-lighten-3 links" href="http://www.twitter.com/" target="_blank"><img
-          src="./images/twitter-square-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-  <a class="grey-text text-lighten-3 links" href="http://www.linkedin.com/company/"
-      target="_blank"></i>&nbsp;<img src="./images/linkedin-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-      <a class="grey-text text-lighten-3 links" href="https://github.com/piyush97/DSC-Website"
-          target="_blank"></i>&nbsp;<img src="./images/github-brands.svg" height="20" width="20"
-              alt="Not displaying">&nbsp;&nbsp;</a>
-</center>
-        <p>Pawan is a code blooded interest with interest in Machine Learning and data science</p>
-        <p>pawan@gmail.com</p>
-        <!--<p><button class="button"><a href="http://www.linkedin.com">Contact</a></button></p>-->
-
-
-      </div>
-
-
-      <div class="col-md-4 " style="text-align: center">
-        <img
-          src="https://media.licdn.com/dms/image/C5103AQHzab3-hYJqQA/profile-displayphoto-shrink_800_800/0?e=1555545600&amp;v=beta&amp;t=gNmf2prZGGQ5TMg1lQES08dgkuj0td0RtFi1Ll3T9KI"
-          aria-label="Satyam Kumar" alt="Avatar" style="width:70%; border-radius: 50%">
-
-
-        <img src="images/developer.jpg" alt="Avatar" style="width:70%; border-radius: 50%">
-
-        <h2>MS Pavan Ranjith</h2>
-        <p class="title">Developer and head</p>
-        <center><a class="grey-text text-lighten-3 links" href="http://www.facebook.com/ " target="_blank"><img
-          src="./images/facebook-square-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-  <a class="grey-text text-lighten-3 links" href="http://www.twitter.com/" target="_blank"><img
-          src="./images/twitter-square-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-  <a class="grey-text text-lighten-3 links" href="http://www.linkedin.com/company/"
-      target="_blank"></i>&nbsp;<img src="./images/linkedin-brands.svg" height="20" width="20"
-          alt="Not displaying"></a>&nbsp;&nbsp;
-      <a class="grey-text text-lighten-3 links" href="https://github.com/piyush97/DSC-Website"
-          target="_blank"></i>&nbsp;<img src="./images/github-brands.svg" height="20" width="20"
-              alt="Not displaying">&nbsp;&nbsp;</a>
-</center>
-        <p>Pawan is a code blooded interest with interest in Machine Learning and data science</p>
-        <p>pawan@gmail.com</p>
-        <!--<p><button class="button"><a href="http://www.linkedin.com">Contact</a></button></p>-->
+      <div class="row" id="aboutus">
+        <div class="container"> <i style="font-size:40px" class="material-icons">school</i>
+          <br>
+          <h5>About DSC</h5><br>
+          <div class="container" style="text-align: justify;font-size:16px">
+            Developer Student Clubs (DSC) is a Google Developers program for university students to learn
+            new-age technical skills. Developer Student Club, Ramaiah institute of technology was
+            founded in 2012 and since then our mission has been to impart people with required computer
+            science skills and be in sync with the latest technology and trends. As a part of DSC, we
+            organize various hackathons, workshops, tech-events round the year. DSC, Ramaiah Institute of
+            Technology has conducted around 50 workshops with 10+ hackathons till date. We were also
+            featured in Google's applied CS with Android course.
+          </div>
+        </div>
+        <div class="container"> <i style="font-size:40px" class="material-icons">group_work</i>
+          <br>
+          <h5>What we do?</h5><br>
+          <div class="container" style="text-align: justify;font-size:16px  ">
+            <div class="devsite-landing-row-item devsite-landing-row-item-no-image">
+              <div class="devsite-landing-row-item-description
+                                        ">
+                <div class="devsite-landing-row-item-description-content">
+                  <p>Google collaborates with university students who are passionate about growing
+                    developer communities and supports them with starting student clubs on their
+                    campuses.</p>
+                  <p>These DSC's provide students with the opportunity to:</p>
+                  <ul>
+                    <li>Grow their knowledge on developer technologies and more through peer to
+                      peer workshops and events.</li>
+                    <li>Gain relevant industry experience by solving problems for local
+                      organizations with technology based solutions.</li>
+                    <li>Showcase their prototypes and solutions to their local community and
+                      industry leaders.</li>
+                  </ul>
+                  <p>Google Developers supports and recognizes DSC's, but does not own or manage
+                    them.</p>
+                </div>
+              </div>
+            </div>
+            <div class="devsite-landing-row-item">
+              <div class="devsite-landing-row-item-media">&nbsp;</div>
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>
-  </div>
+  </section>
+  <section id="event.html">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container-fluid">
+        <div style="clear:both;">
+
+          <center>
+            <h1 class="display-4"
+              style="background:#fcc719; margin-left: -15px; margin-right: -15px;padding-top: 40px; padding-bottom: 40px; font-size: 60px; font-weight:60px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+              Upcoming Events</h1>
+          </center>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+
+
+        <% events.forEach(function(event) { %>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow h-100">
+            <div class="box"><img class="card-img-top img1 " src="<%= event.image.url %>"
+                data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <h4><%= event.name %></h4>&nbsp;
+              <h6>Date & Day: <%= event.date %></h6>&nbsp;
+              <h6>Venue: <%= event.venue %></h6>&nbsp;
+              <h6>Hosted By: <%= event.host %></h6>&nbsp;
+              <p class="card-text"><%= event.description %></p>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+        <% }); %>
+
+      </div>
+  </section><br />
+  <section id="contactUs">
+    <!--Section: Contact v.1-->
+    <section class="section pb-5">
+
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container-fluid">
+          <div style="clear:both;">
+
+            <center>
+              <h1 class="display-4"
+                style="background:#fcc719; margin-left: -15px; margin-right: -15px;padding-top: 40px; padding-bottom: 40px; font-size: 60px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                Contact Us</h1>
+            </center>
+
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="row" style="margin-left: 20px;margin-right: 20px">
+
+        <!--Grid column-->
+        <div class="col-lg-6 mb-4 ">
+          <form id="contact-form" method="post" action="contact.php" role="form">
+
+            <div class="messages"></div>
+
+            <div class="controls">
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="form_name">First Name *</label>
+                    <input id="form_name" type="text" name="name" class="form-control" placeholder="First Name"
+                      required="required" data-error="Firstname is required.">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="form_lastname">Last Name *</label>
+                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Last Name"
+                      required="required" data-error="Lastname is required.">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="form_email">E-mail *</label>
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="E-mail"
+                      required="required" data-error="Valid email is required.">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="form_need">Who are you?</label>
+                    <select id="form_need" name="need" class="form-control" required="required"
+                      data-error="Please specify your need.">
+                      <option value="Request order status">Student</option>
+                      <option value="Request quotation">Faculty</option>
+                      <option value="Request copy of an invoice">Sponsor</option>
+                      <option value="Other">Industry Affiliate</option>
+                    </select>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="form_message">Message *</label>
+                    <textarea id="form_message" name="message" class="form-control" placeholder="Your message" rows="4"
+                      required="required" data-error="Please, leave us a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <input type="submit" class="btn btn-outline-secondary btn-send" value="Send message">
+                </div>
+              </div>
+            </div>
+
+          </form>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-6" style="border: 2px solid blue">
+
+          <!--Google map-->
+          <div id="map-container-google-11" class="z-depth-1-half map-container-6" style="height: 500px">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15548.411526646638!2d77.56652985!3d13.02911995!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1548941956313"
+              width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+
+          <br>
+          <!--Buttons-->
+
+
+        </div>
+        <!--Grid column-->
+
+
+
+      </div>
+
+      </div>
+      <div class="container">
+        <center>
+          <h3><br>Developer Student Club, Ramaiah Institute of Technology</h3>
+        </center>
+        <center>
+          <a class="grey-text text-lighten-3 links" href="http://www.facebook.com/ " target="_blank"><img
+              src="./images/facebook-square-brands.svg" height="40" width="40" alt="Facebook"></a>&nbsp;&nbsp;
+          <!--<a class="grey-text text-lighten-3 links" href="http://www.twitter.com/" target="_blank"><img
+                            src="./images/twitter-square-brands.svg" height="40" width="40"
+                            alt="Twitter"></a>&nbsp;&nbsp;
+                    <a class="grey-text text-lighten-3 links" href="http://www.linkedin.com/company/"
+                        target="_blank"></i>&nbsp;<img src="./images/linkedin-brands.svg" height="40" width="40"
+                            alt="Linkedin"></a>&nbsp;&nbsp;-->
+          <a class="grey-text text-lighten-3 links" href="mailto:dscrit@gmail.com" target="_blank"><img
+              src="./images/envelope-solid.svg" height="40" width="40" alt="E-mail"></a>&nbsp;&nbsp;
+          <a class="grey-text text-lighten-3 links" href="https://github.com/piyush97/DSC-Website" target="_blank"><img
+              src="./images/github-brands.svg" height="40" width="40" alt="Github"></a>&nbsp;&nbsp;
+        </center>
+      </div>
+      <footer class="page-footer font-small cyan darken-3">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+          Copyright &copy; 2019
+          <br>
+          Made with <i class="fa fa-heart"></i> by
+          DSC-<a href="http://www.msrit.edu/" style="color:#fcc719">RIT</a>
+        </div>
+
+        <!-- Copyright -->
+
+      </footer>
+
+    </section>
+    <div class="parallax"></div>
+  </section>
+
+
 </body>
-<footer class="page-footer font-small cyan darken-3">
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">2019 Copyright: Made with <i class="fa fa-heart"></i> by
-    DSC-<a href="http://www.msrit.edu/" style="color:#fcc719">RIT</a>
-  </div>
 
-  <!-- Copyright -->
-
-</footer>
+</html>
