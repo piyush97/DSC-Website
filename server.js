@@ -14,6 +14,9 @@ const blogs = require('./routes/api/blogs');
 const dashboard = require('./routes/api/dashboard');
 const admin = require('./routes/api/admin');
 
+//Event model
+const Event = require('./models/Event');
+
 
 
 // Passport config
@@ -49,7 +52,10 @@ mongoose
 
 //Use routes
 app.get('/', (req, res) => {
-    res.render('index');
+    Event.find()
+        .sort({ date: -1 })
+        .then(events => res.render('index', { events: events }))
+        .catch(err => res.status(404).json(err))
 });
 app.get('/team', (req, res) => {
     res.render('team');
