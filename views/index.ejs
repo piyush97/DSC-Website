@@ -17,6 +17,8 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+    <script src="contactresponse.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
     
@@ -26,6 +28,12 @@
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
         type="text/css">
+        <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_gDwvyaj8rQwUWbZoylkMM");
+   })();
+</script>
     <style>
         .nav-pills .nav-link.active,
         .nav-pills .show>.nav-link {
@@ -64,7 +72,7 @@
                                 class="sr-only">(current)</span></a>
                     </li> &nbsp;
                     <li class="nav-item active">
-                        <a class="nav-link hvr-fade py-2 px-3 " href="/events" style="color:white">Events</a>
+                        <a class="nav-link hvr-fade py-2 px-3 " href="/event" style="color:white">Events</a>
                     </li> &nbsp;
                     <!--  <li class="nav-item active">
               </li> &nbsp; -->
@@ -262,8 +270,6 @@
 
                 <!--Grid column-->
                 <div class="col-lg-6 mb-4 ">
-                    <form id="contact-form" method="post" action="contact.php" role="form">
-
                         <div class="messages"></div>
 
                         <div class="controls">
@@ -303,10 +309,11 @@
                                         <label for="form_need">Who are you?</label>
                                         <select id="form_need" name="need" class="form-control" required="required"
                                             data-error="Please specify your need.">
-                                            <option value="Request order status">Student</option>
-                                            <option value="Request quotation">Faculty</option>
-                                            <option value="Request copy of an invoice">Sponsor</option>
-                                            <option value="Other">Industry Affiliate</option>
+                                            <option value="Student">Student</option>
+                                            <option value="Faculty">Faculty</option>
+                                            <option value="Sponsor">Sponsor</option>
+                                            <option value="Industry Affiliate">Industry Affiliate</option>
+                                            <option value="Other">Other</option>
                                         </select>
                                         <div class="help-block with-errors"></div>
                                     </div>
@@ -323,14 +330,11 @@
                                     </div>
                                 </div>
                                 <div class="col-md-12">
-                                    <input type="submit" class="btn btn-outline-secondary btn-send"
-                                        value="Send message">
+                                    <button type="submit" class="btn btn-outline-secondary btn-send"
+                                        value="Send message" onclick="func()">Send Message</button>
                                 </div>
                             </div>
                         </div>
-
-                    </form>
-
                 </div>
                 <!--Grid column-->
 
