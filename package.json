@@ -15,7 +15,7 @@
   "author": "DSC-RIT",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/RohitNagraj/DSC-Website/issues"
+    "url": "https://github.com/piyush97/DSC-Website/issues"
   },
   "homepage": "https://github.com/piyush97/DSC-Website#readme",
   "dependencies": {
@@ -24,6 +24,7 @@
     "cloudinary": "^1.13.2",
     "concurrently": "^4.1.0",
     "connect-flash": "^0.1.1",
+    "ejs": "^2.6.1",
     "express": "^4.16.4",
     "express-session": "^1.15.6",
     "mongodb": "^3.1.13",
