@@ -28,6 +28,10 @@
       color: #fff;
       background-color: #f7c225;
     }
+    .img1{
+      max-width: 500px;
+      max-height: 300px
+    }
   </style>
 
 </head>
@@ -62,9 +66,11 @@
               <li class="nav-item active">
                 <a class="nav-link hvr-fade py-2 px-3 current " href="#">Events</a>
               </li> &nbsp;
+
               <li class="nav-item active">
                 <a class="nav-link hvr-fade py-2 px-3 " href="/blogs">Blogs</a>
               </li> &nbsp;
+
 
               <li class="nav-item active">
                 <a class="nav-link hvr-fade py-2 px-3 #" href="/team">Team</a>
@@ -86,8 +92,8 @@
 
           <% events.forEach(function(event) { %>
           <div class="col-md-6">
-            <div class="card mb-4 box-shadow">
-              <div class="box"><img class="card-img-top" src="<%= event.image.url %>"
+            <div class="card mb-4 box-shadow h-100">
+              <div class="box"><img class="card-img-top img1 " src="<%= event.image.url %>" 
                   data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
               </div>
               <div class="card-body">
