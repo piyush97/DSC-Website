@@ -10,7 +10,7 @@ const Blog = require('../../models/Blog');
 router.get('/', (req, res) => {
     Blog.find()
         .sort({ date: -1 })
-        .then(blogs => res.json(blogs))
+        .then(blogs => res.render('blogs', { blogs: blogs }))
         .catch(err => res.status(404).json(err))
 });
 

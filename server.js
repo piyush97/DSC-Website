@@ -6,6 +6,7 @@ const session = require('express-session');
 
 
 const app = express();
+app.set('view engine', 'ejs');
 
 
 const events = require('./routes/api/events');
@@ -47,11 +48,14 @@ mongoose
     .catch(err => console.log(err));
 
 //Use routes
+app.get('/', (req, res) => {
+    res.render('index');
+});
 app.use('/events', events);
 app.use('/blogs', blogs);
 app.use('/admin', admin);
 app.use('/dashboard', dashboard);
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/views'));
 
 const port = process.env.PORT || 5000;
 
