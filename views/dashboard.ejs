@@ -1,256 +1,456 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="images/logo2.png" />
+    <link rel="shortcut icon" type="image/png" href="images/logo2.png" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/web.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" type="image/png" href="images/logo2.png" />
-  <link rel="shortcut icon" type="image/png" href="images/logo2.png" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/web.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-
-
-</head>
-
-<body style="background: linear-gradient(to right, #ffeeee, #ddefbb)">
-  <section>
-    <section id="navbar1">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <h1>Hello <%= username %></h1>
-        <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="event-dashboard.html">Event Update<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="blog-dashboard.html">Blog Update<span class="sr-only">(current)</span></a>
-            </li>
-
-          </ul>
-          <form method="GET" action="/admin/logout/" class="form-inline my-2 my-lg-0">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>
-          </form>
-        </div>
-      </nav>
-    </section>
-    <br><br>
-    <section id="body-dashboard">
-      <div id="accordion container">
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h5 class="mb-0">
-              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                aria-controls="collapseOne">
-                Add Blog
-              </button>
-            </h5>
-          </div>
-
-          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-            <div class="card-body">
-              <section id="blog_post">
-                <br><br>
-                <div class="container">
-                  <div class="form-group">
-                    <fieldset class="the-fieldset">
-                      <legend class="the-legend">Update Blog</legend>
-                      <form>
-                        <div class="form-group">
-                          <label for="exampleFormControlInput1">Title of blog</label>
-                          <input type="text" class="form-control" id="title1" placeholder="Enter your title here..">
-                        </div>
-                        <div class="form-group">
-                          <label for="exampleFormControlTextarea1">Enter the description</label>
-                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="25"
-                            placeholder="Type your blog here"></textarea>
-                        </div>
-                        <form>
-                          <fieldset class="the-fieldset">
-                            <div class="form-group">
-                              <label for="exampleFormControlFile1">Upload Image</label>
-                              <input type="file" class="form-control-file modify" id="exampleFormControlFile1"
-                                accept="image/*">
-                            </div>
-                          </fieldset>
-
-                        </form><br>
-                        <form>
-                          <fieldset class="the-fieldset">
-                            <div class="form-group">
-                              <label for="exampleFormControlFile2">Upload Additional Document or File</label>
-                              <input type="file" class="form-control-file modify" id="exampleFormControlFile2">
-                            </div>
-                          </fieldset>
-
-                        </form>
-
-                      </form><br>
-                      <button class="btn btn-primary" style="float: right" type="subit" id="submit">Publish</button>
-                    </fieldset>
-                  </div>
-                </div>
-              </section>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="headingTwo">
-            <h5 class="mb-0">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
-                aria-expanded="false" aria-controls="collapseTwo">
-                Add Event
-              </button>
-            </h5>
-          </div>
-          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-            <div class="card-body">
-              <section id="blog_post">
-                <br><br>
-                <div class="container">
-                  <div class="form-group">
-                    <fieldset class="the-fieldset">
-                      <legend class="the-legend">Update Event</legend>
-                      <form method="POST" action="/events" enctype="multipart/form-data">
-                        <div class="form-group">
-                          <label for="exampleFormControlInput1">Name of the Event</label>
-                          <input type="text" class="form-control" id="title2" placeholder="Enter your title here.."
-                            name="name">
-                        </div>
-                        <div class="form-group">
-                          <label for="exampleFormControlInput1">Date(YYYY-MM-DD)</label>
-                          <input type="text" class="form-control" id="title3"
-                            placeholder="Enter your date(YYYY-MM-DD)here.." name="date">
-                        </div>
-                        <div class="form-group">
-                          <label for="exampleFormControlInput1">Day</label>
-                          <input type="text" class="form-control" id="title4" placeholder="Enter the day here.."
-                            name="day">
-                        </div>
-                        <div class="form-group">
-                          <label for="exampleFormControlInput1">Venue</label>
-                          <input type="text" class="form-control" id="title5" placeholder="Enter your Venue here.."
-                            name="venue">
-                        </div>
-                        <div class="form-group">
-                          <label for="exampleFormControlInput1">Hosted By</label>
-                          <input type="text" class="form-control" id="title6" placeholder="Enter your title here.."
-                            name="host">
-                        </div>
-
-                        <div class="form-group">
-                          <label for="exampleFormControlTextarea2">Enter the description of Event</label>
-                          <textarea class="form-control" id="exampleFormControlTextarea2" rows="10"
-                            placeholder="Type your blog here" name="description"></textarea>
-                        </div>
-                        <div class="form-group">
-                          <label for="exampleFormControlFile3">Hosts's Section</label><br>
-                          <label for="exampleFormControlInput1">Name</label>
-                          <input type="text" class="form-control" id="title7" placeholder="Enter your name here.."
-                            name="contact_name">
-                          <label for="exampleFormControlInput1">Phone number</label>
-                          <input type="text" class="form-control" id="title8"
-                            placeholder="Enter your Phone number here.." name="contact_phone">
-                          <label for="exampleFormControlInput1">Email</label>
-                          <input type="text" class="form-control" id="title9" placeholder="Enter your Email here.."
-                            name="contact_email">
-                        </div>
-                        <div class="form-group">
-                          <label for="exampleFormControlFile4">Upload Image</label>
-                          <input type="file" class="form-control-file modify" id="exampleFormControlFile4"
-                            accept="image/*" name="image">
-                        </div>
-
-                        <br><br>
-                        <button class="btn btn-primary" style="float: right" type="submit" id="submit">Publish</button>
-                      </form>
-                    </fieldset>
-                  </div>
-                </div>
-              </section>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="headingThree">
-            <h5 class="mb-0">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
-                aria-expanded="false" aria-controls="collapseThree">
-                Add Member
-              </button>
-            </h5>
-          </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-            <div class="card-body">
-              <br><br>
-              <div>
-                <form method="POST" action="/admin/register/" class="container col-6">
-
-                  <div class="form-group input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text"> <i class="fa fa-user"></i> </span>
-                    </div>
-                    <input name="name" class="form-control" placeholder="Full name" type="text">
-                  </div> <!-- form-group// -->
-                  <div class="form-group input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
-                    </div>
-                    <input name="email" class="form-control" placeholder="Email address" type="email">
-                  </div> <!-- form-group// -->
-                  <div class="form-group input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-                    </div>
-                    <input class="form-control" placeholder="Create password" type="password" name="password">
-                  </div> <!-- form-group// -->
-                  <div class="form-group input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-                    </div>
-                    <input class="form-control" placeholder="Repeat password" type="password" name="password2">
-                  </div> <!-- form-group// -->
-                  <div class="form-group">
-                    <button type="submit" class="btn btn-primary btn-block"> Create Account </button>
-                  </div> <!-- form-group// -->
-                </form>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <br><br>
-
-    </section>
+  <body style="background:#fdbb27">
     <section>
-      <footer class="page-footer font-small cyan darken-3">
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">2019 Copyright: Made with <i class="fa fa-heart"></i> by
-          <a href="http://www.msrit.edu/">DSC-RIT</a>
+      <section id="navbar1">
+        
+
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#"><h2 style="color:#fdbb27">Hello <%= username %></h1></a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+              <li> <a class="nav-link" href="event-dashboard.html"
+                >Event Update<span class="sr-only">(current)</span></a>
+            </li>
+              <li> <a class="nav-link" href="blog-dashboard.html"
+                >Blog Update<span class="sr-only">(current)</span></a></li>
+              <li> <form
+                method="GET"
+                action="/admin/logout/"
+                class="form-inline my-2 my-lg-2"
+              >
+                <button
+                  class="btn btn-warning  my-2 my-sm-2"
+                  type="submit"
+                >
+                  Logout
+                </button>
+              </form></li>
+            </ul>
+          </div>
+        </nav>
+
+
+        
+      </section>
+      <br /><br />
+      <section id="body-dashboard">
+        <div id="accordion container">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Add Blog
+                </button>
+              </h5>
+            </div>
+
+            <div
+              id="collapseOne"
+              class="collapse show"
+              aria-labelledby="headingOne"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                <section id="blog_post">
+                  <br /><br />
+                  <div class="container">
+                    <div class="form-group">
+                      <fieldset class="the-fieldset">
+                        <legend class="the-legend">Update Blog</legend>
+                        <form>
+                          <div class="form-group">
+                            <label for="exampleFormControlInput1"
+                              >Title of blog</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="title1"
+                              placeholder="Enter your title here.."
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleFormControlTextarea1"
+                              >Enter the description</label
+                            >
+                            <textarea
+                              class="form-control"
+                              id="exampleFormControlTextarea1"
+                              rows="25"
+                              placeholder="Type your blog here"
+                            ></textarea>
+                          </div>
+                          <form>
+                            <fieldset class="the-fieldset">
+                              <div class="form-group">
+                                <label for="exampleFormControlFile1"
+                                  >Upload Image</label
+                                >
+                                <input
+                                  type="file"
+                                  class="form-control-file modify"
+                                  id="exampleFormControlFile1"
+                                  accept="image/*"
+                                />
+                              </div>
+                            </fieldset>
+                          </form>
+                          <br />
+                          <form>
+                            <fieldset class="the-fieldset">
+                              <div class="form-group">
+                                <label for="exampleFormControlFile2"
+                                  >Upload Additional Document or File</label
+                                >
+                                <input
+                                  type="file"
+                                  class="form-control-file modify"
+                                  id="exampleFormControlFile2"
+                                />
+                              </div>
+                            </fieldset>
+                          </form>
+                        </form>
+                        <br />
+                        <button
+                          class="btn btn-warning"
+                          style="float: right"
+                          type="subit"
+                          id="submit"
+                        >
+                          Publish
+                        </button>
+                      </fieldset>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Add Event
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapseTwo"
+              class="collapse"
+              aria-labelledby="headingTwo"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                <section id="blog_post">
+                  <br /><br />
+                  <div class="container">
+                    <div class="form-group">
+                      <fieldset class="the-fieldset">
+                        <legend class="the-legend">Update Event</legend>
+                        <form
+                          method="POST"
+                          action="/events"
+                          enctype="multipart/form-data"
+                        >
+                          <div class="form-group">
+                            <label for="exampleFormControlInput1"
+                              >Name of the Event</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="title2"
+                              placeholder="Enter your title here.."
+                              name="name"
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleFormControlInput1"
+                              >Date(YYYY-MM-DD)</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="title3"
+                              placeholder="Enter your date(YYYY-MM-DD)here.."
+                              name="date"
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleFormControlInput1">Day</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="title4"
+                              placeholder="Enter the day here.."
+                              name="day"
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleFormControlInput1">Venue</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="title5"
+                              placeholder="Enter your Venue here.."
+                              name="venue"
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleFormControlInput1"
+                              >Hosted By</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="title6"
+                              placeholder="Enter your title here.."
+                              name="host"
+                            />
+                          </div>
+
+                          <div class="form-group">
+                            <label for="exampleFormControlTextarea2"
+                              >Enter the description of Event</label
+                            >
+                            <textarea
+                              class="form-control"
+                              id="exampleFormControlTextarea2"
+                              rows="10"
+                              placeholder="Type your blog here"
+                              name="description"
+                            ></textarea>
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleFormControlFile3"
+                              >Hosts's Section</label
+                            ><br />
+                            <label for="exampleFormControlInput1">Name</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="title7"
+                              placeholder="Enter your name here.."
+                              name="contact_name"
+                            />
+                            <label for="exampleFormControlInput1"
+                              >Phone number</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="title8"
+                              placeholder="Enter your Phone number here.."
+                              name="contact_phone"
+                            />
+                            <label for="exampleFormControlInput1">Email</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="title9"
+                              placeholder="Enter your Email here.."
+                              name="contact_email"
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleFormControlFile4"
+                              >Upload Image</label
+                            >
+                            <input
+                              type="file"
+                              class="form-control-file modify"
+                              id="exampleFormControlFile4"
+                              accept="image/*"
+                              name="image"
+                            />
+                          </div>
+
+                          <br /><br />
+                          <button
+                            class="btn btn-warning"
+                            style="float: right"
+                            type="submit"
+                            id="submit"
+                          >
+                            Publish
+                          </button>
+                        </form>
+                      </fieldset>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Add Member
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapseThree"
+              class="collapse"
+              aria-labelledby="headingThree"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                <br /><br />
+                <div>
+                  <form
+                    method="POST"
+                    action="/admin/register/"
+                    class="container col-6"
+                  >
+                    <div class="form-group input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">
+                          <i class="fa fa-user"></i>
+                        </span>
+                      </div>
+                      <input
+                        name="name"
+                        class="form-control"
+                        placeholder="Full name"
+                        type="text"
+                      />
+                    </div>
+                    <!-- form-group// -->
+                    <div class="form-group input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">
+                          <i class="fa fa-envelope"></i>
+                        </span>
+                      </div>
+                      <input
+                        name="email"
+                        class="form-control"
+                        placeholder="Email address"
+                        type="email"
+                      />
+                    </div>
+                    <!-- form-group// -->
+                    <div class="form-group input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">
+                          <i class="fa fa-lock"></i>
+                        </span>
+                      </div>
+                      <input
+                        class="form-control"
+                        placeholder="Create password"
+                        type="password"
+                        name="password"
+                      />
+                    </div>
+                    <!-- form-group// -->
+                    <div class="form-group input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">
+                          <i class="fa fa-lock"></i>
+                        </span>
+                      </div>
+                      <input
+                        class="form-control"
+                        placeholder="Repeat password"
+                        type="password"
+                        name="password2"
+                      />
+                    </div>
+                    <!-- form-group// -->
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-warning btn-block">
+                        Create Account
+                      </button>
+                    </div>
+                    <!-- form-group// -->
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- Copyright -->
 
-      </footer>
+        <br /><br />
+      </section>
+      <section>
+        <footer class="page-footer font-small cyan darken-3">
+          <!-- Copyright -->
+          <div class="footer-copyright text-center py-3">
+            2019 Copyright: Made with <i class="fa fa-heart"></i> by
+            <a href="http://www.msrit.edu/">DSC-RIT</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+      </section>
     </section>
-  </section>
-</body>
-
+  </body>
 </html>
