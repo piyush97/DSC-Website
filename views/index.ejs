@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="./images/logo2.png" />
     <link rel="shortcut icon" type="image/png" href="./images/logo2.png" />
-   <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="./css/web.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
@@ -109,6 +109,14 @@
                             <p style="font-size: 30px">Google Developers | Ramaiah Institute of Technology</p>
                     </div>
                     <img class="d-block w-100" src="./images/android3.png" alt="First slide">
+
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 style="font-size: 70px">Developer Student Club</h5>
+                            <p style="font-size: 30px">Google Developers | Ramaiah Institute of Technology</p>
+                    </div>
+                    <img class="d-block w-100" src="./images/android3.png" alt="Second slide">
 
                 </div>
                 <div class="carousel-item">
@@ -221,17 +229,12 @@
                                 alt="Card image cap">
                         </div>
                         <div class="card-body">
-                            <h4>Name: <%= event.name %></h4>&nbsp;
+                            <h4><%= event.name %></h4>&nbsp;
                             <h6>Date & Day: <%= event.date %></h6>&nbsp;
                             <h6>Venue: <%= event.venue %></h6>&nbsp;
                             <h6>Hosted By: <%= event.host %></h6>&nbsp;
                             <p class="card-text"><%= event.description %></p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-muted">9 mins</small>
                             </div>
                         </div>
                     </div>
