@@ -29,81 +29,60 @@
 </head>
 
 <body>
-  <section id="navbarHome">
-    <div>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-0">
-        <a class="hide-on-med-and-down" id="logo-container" href="http://msrit.edu" target="_blank" class="brand-logo">
-          <img src="images/dsclogo.png" width="55px" height="60px" style="padding-top:5px"></a>
-        &nbsp; &nbsp;
-        <a class="navbar-brand" href="#">Developer Student Club</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <div id="navbar">
 
-        <div class="collapse navbar-collapse" data-toggle="collapse" data-target=".navbar-collapse"
-          id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link hvr-fade py-2 px-3" href="index.html" id="ishank">Home <span
-                  class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link hvr-fade py-2 px-2" href="index.html#aboutUs">About Us <span
-                  class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item dropdown active">
-              <a class="nav-link dropdown-toggle hvr-fade py-2 px-3" href="#" id="navbarDropdown" role="button"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Events
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Hackathon</a>
-                <a class="dropdown-item" href="#">Workshops</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Techfest</a>
-              </div>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link hvr-fade py-2 px-4" href="blogs.html">Blogs</a>
-            </li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-0">
+      <a class="hide-on-med-and-down" id="logo-container" href="/" target="_self" class="brand-logo">
+        <img src="./images/DSC_badge_Color.svg" width="55px" height="60px" style="margin-right: 8px"></a>
+      <a class="navbar-brand" href="/"><span style="color:#fcc719;font-size: 20px; font-weight: 70px"> Developer
+          Student Club</span></a> &nbsp;
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <li class="nav-item active">
-              <a class="nav-link hvr-fade py-2 px-4" href="team.html">Team</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link hvr-fade py-2 " href="index.html#contactUs">Contact Us</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
+      <div class="collapse navbar-collapse" data-toggle="collapse" data-target=".navbar-collapse"
+        id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto nav-pills">
+          <li class="nav-item">
+            <a class="nav-link hvr-fade py-2 px-3" href="/" id="ishank" style="color:white">Home<span
+                class="sr-only">(current)</span></a>
+          </li> &nbsp;
+          <li class="nav-item active">
+            <a class="nav-link hvr-fade py-2 px-3" href="/#aboutUs" style="color:white">About Us<span
+                class="sr-only">(current)</span></a>
+          </li> &nbsp;
+          <li class="nav-item active">
+            <a class="nav-link hvr-fade py-2 px-3 " href="/events" style="color:white">Events</a>
+          </li> &nbsp;
+          <!--  <li class="nav-item active">
+                </li> &nbsp; -->
+          <!-- <a class="nav-link hvr-fade py-2 px-3 " href="blogs.html">Blogs</a> -->
 
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="login.html"><i
-                  class="fas fa-user"></i> Log In</a></button> &nbsp;&nbsp;
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="signup.html"><i
-                  class="fas fa-user-plus"></i> Sign Up</a></button>
-          </form>
-          <span class="navbar-text py-0 color-blue">
-          </span>
-        </div>
-      </nav>
-
-  </section>
+          <li class="nav-item active">
+            <a class="nav-link hvr-fade py-2 px-3 " style="color: white" href="/team">Team</a>
+          </li> &nbsp;
+          <li class="nav-item active">
+            <a class="nav-link hvr-fade py-2 px-3 " style="color: white " href="/#contactUs">Contact Us</a>
+          </li>
+      </div>
+    </nav>
+  </div>
 
   <form method="POST" action="/admin/" class="form-signin">
-    <img class="mb-4" src="./images/dscLogo.png" alt="" width="200" height="200">
+    <img class="mb-4" src="./images/DSC_badge_Color.svg" alt="" width="300" height="200">
     <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
     <label for="inputEmail" class="sr-only">Email address</label>
     <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus
       name="email">
     <label for="inputPassword" class="sr-only">Password</label>
     <input type="password" id="inputPassword" class="form-control" placeholder="Password" required name="password">
-    <div class="checkbox mb-3">
-      <label>
-        <input type="checkbox" value="remember-me"> Remember me
-      </label>
-    </div>
+
     <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-    <p class="mt-5 mb-3 text-muted">&copy; 2018-2019</p>
+    <p class="mt-5 mb-3 text-muted"> Made with <i class="fa fa-heart"></i> by DSC-RIT
+      <br>
+      &copy; 2019
+    </p>
   </form>
 
   <!-- <form method="post" action="/admin">

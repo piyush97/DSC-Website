@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="css/web.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 
+
 </head>
 
 <body style="background: linear-gradient(to right, #ffeeee, #ddefbb)">
@@ -44,7 +45,7 @@
 
           </ul>
           <form method="GET" action="/admin/logout/" class="form-inline my-2 my-lg-0">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Log out</button>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>
           </form>
         </div>
       </nav>
@@ -199,57 +200,41 @@
             <div class="card-body">
               <br><br>
               <div>
-                <form class="container col-6">
+                <form method="POST" action="/admin/register/" class="container col-6">
 
                   <div class="form-group input-group">
                     <div class="input-group-prepend">
                       <span class="input-group-text"> <i class="fa fa-user"></i> </span>
                     </div>
-                    <input name="" class="form-control" placeholder="Full name" type="text">
+                    <input name="name" class="form-control" placeholder="Full name" type="text">
                   </div> <!-- form-group// -->
                   <div class="form-group input-group">
                     <div class="input-group-prepend">
                       <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
                     </div>
-                    <input name="" class="form-control" placeholder="Email address" type="email">
+                    <input name="email" class="form-control" placeholder="Email address" type="email">
                   </div> <!-- form-group// -->
                   <div class="form-group input-group">
                     <div class="input-group-prepend">
-                      <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+                      <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
                     </div>
-
-                    <input name="" class="form-control" placeholder="Phone number" type="text">
+                    <input class="form-control" placeholder="Create password" type="password" name="password">
                   </div> <!-- form-group// -->
                   <div class="form-group input-group">
                     <div class="input-group-prepend">
-                      <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                      <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
                     </div>
-                    <input name="" class="form-control" placeholder="USN" type="text">
+                    <input class="form-control" placeholder="Repeat password" type="password" name="password2">
                   </div> <!-- form-group// -->
+                  <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block"> Create Account </button>
+                  </div> <!-- form-group// -->
+                </form>
+              </div>
 
-              </div> <!-- form-group end.// -->
-              <div class="form-group input-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-                </div>
-                <input class="form-control" placeholder="Create password" type="password">
-              </div> <!-- form-group// -->
-              <div class="form-group input-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-                </div>
-                <input class="form-control" placeholder="Repeat password" type="password">
-              </div> <!-- form-group// -->
-              <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-block"> Create Account </button>
-              </div> <!-- form-group// -->
-              <p class="text-center">Have an account? <a href="login.html">Log In</a> </p>
-              </form>
             </div>
-
           </div>
         </div>
-      </div>
       </div>
 
       <br><br>
