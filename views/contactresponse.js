@@ -45,8 +45,8 @@ function func(){
     var service_id = "default_service";
     var template_id = "template_aKJCAqDa";
     emailjs.send(service_id, template_id, template_params);
-    id1.value = " ";
-    id2.value = " ";
-    id3.value = " @gmail.com";
-    id5.value = " ";
+    alert("Form Successfully Submitted. Thank you, our team will get in touch with you shortly.");
+    
   }
+//UI for form-successfully submitted, still to be added.
+//Have to make some change in the form response.
