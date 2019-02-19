@@ -8,10 +8,15 @@ Use basic git commands [git](https://services.github.com/on-demand/downloads/git
 ```bash
 git clone https://github.com/piyush97/DSC-Website.git
 ```
-
+Navigate to the required directory using ```cd```, install node, node packages, and run the server.
+```bash
+npm i
+npm start
+```
+The website will then be run via localhost, which can then be viewed in your preferred browser.
 ## Usage
 
-Open the ```index.html``` file in the public folder to view the website in your preferred browser. Live Hosting is on its way.
+Hosted on [heroku](https://fierce-hollows-38004.herokuapp.com/). 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
