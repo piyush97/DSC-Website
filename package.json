@@ -27,6 +27,7 @@
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "express-session": "^1.15.6",
+    "heroku": "^7.21.0",
     "mongodb": "^3.1.13",
     "mongoose": "^5.4.7",
     "multer": "^1.4.1",
