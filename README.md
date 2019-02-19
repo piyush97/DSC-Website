@@ -3,17 +3,17 @@
 The official DSC Website repository.
 ## Installation
 
-Use basic git commands [git](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf) to install and run DSC-Website.
+Use basic [git](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf) commands to install and run DSC-Website.
 
 ```bash
 git clone https://github.com/piyush97/DSC-Website.git
 ```
-Navigate to the required directory using ```cd```, install node, node packages, and run the server.
+Navigate to the required directory using ```cd```, install [node](https://nodejs.org/en/), node packages, and run the server.
 ```bash
 npm i
 npm start
 ```
-The website will be run via localhost.It can then be viewed in your preferred browser.
+The website will be run via localhost. It can then be viewed in your preferred browser.
 ## Usage
 
 Hosted on [heroku](https://fierce-hollows-38004.herokuapp.com/). 
