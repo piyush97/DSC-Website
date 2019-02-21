@@ -7,7 +7,7 @@
     "start": "node server.js",
     "server": "nodemon server.js",
     "build": "node server.js",
-    "test": "dredd"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/piyush97/DSC-Website#readme",
   "dependencies": {
+    "assert": "^1.4.1",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
     "cloudinary": "^1.13.2",
@@ -38,7 +39,8 @@
     "passport-local": "^1.0.0"
   },
   "devDependencies": {
-    "nodemon": "^1.18.10",
-    "dredd": "^8.0.2"
+    "dredd": "^8.0.2",
+    "mocha": "^6.0.0",
+    "nodemon": "^1.18.10"
   }
 }
