@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",
-    "build": "node server.js"
+    "build": "node server.js",
+    "test": "dredd"
   },
   "repository": {
     "type": "git",
@@ -37,6 +38,7 @@
     "passport-local": "^1.0.0"
   },
   "devDependencies": {
-    "nodemon": "^1.18.10"
+    "nodemon": "^1.18.10",
+    "dredd": "^8.0.2"
   }
 }
