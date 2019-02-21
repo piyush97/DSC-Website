@@ -1,7 +1,8 @@
 language: node_js # Sets which engine use to build the project
 node_js: "node" # Specifies node version to use "node"="latest"
 services: mongodb
+before_script:
+  - mongo mydb_test --eval 'db.createUser({user:"travis",pwd:"test",roles:["readWrite"]});'
 cache: # Caching Node Modules :D
   directories:
     - "node_modules"
-  yarn: true
