@@ -47,6 +47,8 @@ const db = require('./config/keys').mongoURI;
 
 mongoose
     .connect(db, { useNewUrlParser: true })
+    .then(() => console.log('Database connected!'))
+    .catch(err => console.log(err));
 
 //Use routes
 app.get('/', (req, res) => {
@@ -66,4 +68,4 @@ app.use(express.static(__dirname + '/views'));
 
 const port = process.env.PORT || 3000;
 
-app.listen(port);
+app.listen(port, () => console.log(`Server started on port ${port}`));
