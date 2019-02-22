@@ -39,7 +39,6 @@
     "passport-local": "^1.0.0"
   },
   "devDependencies": {
-    "dredd": "^8.0.2",
     "mocha": "^6.0.0",
     "nodemon": "^1.18.10"
   }
